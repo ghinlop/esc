@@ -1,0 +1,250 @@
+@import './inc/_mixin.scss';
+
+:root {
+  /* Main Color & Color Class Global*/
+  --blue-main: #0d4399;
+  --white-main: #e6f7ff;
+  --red-main: #dd181f;
+  --menu-color: #b7ebfe;
+  --overlay-color: rgba(0,0,0,0.5);
+  /* Font Config */
+  --roboto: 'Roboto', sans-serif;
+  --roboto-condensed: 'Roboto Condensed', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+  --montserrat: 'Montserrat', sans-serif;
+  --noto-sans: 'Noto Sans', sans-serif;
+  /* Header Top Config */
+  --head-top-size: 10pt;
+  /* Navbar Config */
+  --logo-head: 90px;
+  --navbar-size: 11pt;
+  /* Class Set Global */
+  .text-blue-main {
+    color: var(--blue-main);
+  }
+
+  .text-white-main {
+    color: var(--white-main);
+  }
+
+  .text-red-main {
+    oolor: var(--red-main);
+  }
+
+  .bg-blue-main {
+    background-color: var(--blue-main);
+  }
+
+  .bg-white-main {
+    background-color: var(--white-main);
+  }
+
+  .bg-red-main {
+    background-color: var(--red-main);
+  }
+
+  .bg-menu-color {
+    background-color: var(--menu-color);
+  }
+}
+/* Global CSS Config */
+
+body {
+  font-family: var(--noto-sans);
+}
+.uk-offcanvas-overlay::before{
+  background-color: var(--overlay-color);
+}
+:active,
+:focus,
+:hover {
+  transition: all 0.5 linear;
+  text-decoration: none!important;
+}
+
+.nolist {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+@include md {
+  .nodesk {
+    .uk-offcanvas {
+      position: static!important;
+      display: block;
+    }
+
+    .uk-offcanvas-bar {
+      position: static;
+      width: 100%;
+      background-color: $nocolor;
+      padding: 0;
+      @include transform(unset);
+    }
+  }
+}
+/*Header Class CSS*/
+
+.gh-header {
+  // background-color: var(--menu-color);
+  position: relative;
+  @include md {
+    z-index: 9999;
+  }
+
+  > * {
+    font-size: var(--head-top-size);
+  }
+
+  a {
+    @include txt-color(#333, var(--red-main));
+    font-weight: bold;
+  }
+  @include md {
+    &::after,
+    &::before {
+      content: '';
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+    }
+
+    &::after {
+      width: 27vw;
+      background-color: var(--blue-main);
+      right: 0;
+    }
+
+    &::before {
+      width: 73vw;
+      left: 0;
+      background-color: var(--menu-color);
+    }
+  }
+}
+
+.gh-lang-slc {
+  border-radius: 5px;
+  overflow: hidden;
+
+  li {
+    > a {
+      display: block;
+      padding: 10px;
+      @include txt-color(var(--white-main), #fff);
+      @include bg-color(translate, #3778cd);
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #3778cd;
+    }
+  }
+}
+
+.gh-menu-right {
+  position: relative;
+  z-index: 0;
+
+  li {
+    a {
+      display: block;
+      padding: 10px;
+      @include txt-color(var(--white-main), #fff);
+    }
+  }
+}
+
+.gh-header-logo {
+  img {
+    max-width: var(--logo-head);
+  }
+}
+
+.gh-navbar {
+  li a {
+    display: block;
+    font-size: var(--navbar-size);
+    @include md {
+      padding: 25px 15px;
+      color: var(--blue-main);
+
+      &.active,
+      &.uk-open,
+      &:hover {
+        color: var(--red-main);
+        border-bottom: 2px solid var(--red-main);
+      }
+    }
+    @include sm {
+      padding: 10px 15px;
+      border-bottom: 1px solid #333;
+    }
+  }
+}
+
+.gh-dropdown {
+  text-align: left;
+  li a {
+    font-size: 12pt;
+
+    .fa {
+      margin-right: 5px;
+    }
+    @include md {
+      padding: 5px 0;
+      @include txt-color(var(--white-main), var(--blue));
+
+      &:hover {
+        border: 0;
+      }
+    }
+  }
+}
+.uk-dropdown {
+  text-transform: capitalize;
+  margin-top: 0;
+  @include sm{
+    strong{
+      background: #126da6;
+      display: block;
+      padding: 15px;
+    }
+    &.uk-open{
+      position: static;
+      &.uk-animation-enter{
+        position: absolute;
+        width: 100%;
+      }
+    }
+    li a{
+      border-bottom: 1px solid #005a93;
+    }
+  }
+}
+#js-gh-navbar,
+.gh-dropdown,
+.gh-navbar {
+  @include md {
+    position: static;
+  }
+}
+
+.gh-dropdown-expand {
+  left: 0!important;
+  right: 0!important;
+  width: 100%;
+}
+
+.gh-toggle-menu {
+  li:not(:last-child){
+      border-right: 1px solid #0c4d77;
+  }
+  li a {
+    display: block;
+    padding: 8px;
+    @include txt-color(#fff, var(--white-main));
+    font-size: 9pt;
+
+  }
+}

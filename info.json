@@ -1,0 +1,9 @@
+{
+    "engine": "ejs",
+    "domain": "esc.gh",
+    "path_static": "public",
+    "dev_path": "dev",
+    "css_path": "css",
+    "minify": true,
+    "ext": "ejs"
+}
