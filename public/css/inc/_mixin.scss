@@ -261,6 +261,16 @@ $nocolor: transparent;
         }
     }
 }
+@mixin color-render($name: null, $color: null){
+  @if $name and $color{
+    .bg-#{$name}{
+      background-color: $color;
+    }
+    .text-#{$name}{
+      color: $color;
+    }
+  }
+}
 @mixin sm($w: 768px) {
     @media screen and (max-width: $w) {
         @content;

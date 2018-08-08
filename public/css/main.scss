@@ -6,7 +6,13 @@
   --white-main: #e6f7ff;
   --red-main: #dd181f;
   --menu-color: #b7ebfe;
+  --no-color: transparent;
   --overlay-color: rgba(0,0,0,0.5);
+  --fb-color: #3b5999;
+  --google-plus-color: #dd4b39;
+  --twitter-color: #55acee;
+  --instagram-color: #e4405f;
+  --youtube-color: #cd201f;
   /* Font Config */
   --roboto: 'Roboto', sans-serif;
   --roboto-condensed: 'Roboto Condensed', sans-serif;
@@ -31,6 +37,14 @@
     oolor: var(--red-main);
   }
 
+  .no-bg {
+    background-color: var(--no-color);
+  }
+
+  .no-color {
+    background-color: var(--no-color);
+  }
+
   .bg-blue-main {
     background-color: var(--blue-main);
   }
@@ -46,15 +60,25 @@
   .bg-menu-color {
     background-color: var(--menu-color);
   }
+  .border-blue-main{
+    border-color: var(--blue-main)!important;
+  }
+  .border-red-main{
+    border-color: var(--red-main)!important;
+  }
+  .border-white-main{
+    border-color: var(--white-main)!important;
+  }
 }
 /* Global CSS Config */
-
 body {
   font-family: var(--noto-sans);
 }
-.uk-offcanvas-overlay::before{
+
+.uk-offcanvas-overlay::before {
   background-color: var(--overlay-color);
 }
+
 :active,
 :focus,
 :hover {
@@ -66,6 +90,56 @@ body {
   list-style: none;
   padding-left: 0;
   margin: 0;
+}
+
+.gh-home-title {
+  position: relative;
+  text-transform: uppercase;
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+  }
+
+  &.gh-border-center {
+    text-align: center;
+
+    &::after,
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.gh-border-left {
+    &::after,
+    &::before {
+      left: 0;
+    }
+  }
+
+  &.gh-border-right {
+    text-align: right;
+
+    &::after,
+    &::before {
+      right: 0;
+      transform: translateX(-50%);
+    }
+  }
+
+  &::before {
+    width: 250px;
+    border-bottom: 1px solid #999;
+  }
+
+  &::after {
+    width: 50px;
+    bottom: -0.5px;
+    border-bottom: 4px solid var(--red-main);
+  }
 }
 @include md {
   .nodesk {
@@ -84,7 +158,6 @@ body {
   }
 }
 /*Header Class CSS*/
-
 .gh-header {
   // background-color: var(--menu-color);
   position: relative;
@@ -111,13 +184,13 @@ body {
     }
 
     &::after {
-      width: 27vw;
+      width: 26vw;
       background-color: var(--blue-main);
       right: 0;
     }
 
     &::before {
-      width: 73vw;
+      width: 74vw;
       left: 0;
       background-color: var(--menu-color);
     }
@@ -125,15 +198,39 @@ body {
 }
 
 .gh-lang-slc {
+  position: relative;
   border-radius: 5px;
-  overflow: hidden;
+
+  &::before {
+    content: '';
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 0 solid transparent;
+    border-bottom: 5px solid var(--blue-main);
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   li {
+    overflow: hidden;
+
     > a {
       display: block;
       padding: 10px;
       @include txt-color(var(--white-main), #fff);
       @include bg-color(translate, #3778cd);
+    }
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
     }
 
     &:not(:last-child) {
@@ -149,7 +246,7 @@ body {
   li {
     a {
       display: block;
-      padding: 10px;
+      padding: 10px 5px;
       @include txt-color(var(--white-main), #fff);
     }
   }
@@ -185,6 +282,7 @@ body {
 
 .gh-dropdown {
   text-align: left;
+
   li a {
     font-size: 12pt;
 
@@ -201,27 +299,32 @@ body {
     }
   }
 }
+
 .uk-dropdown {
   text-transform: capitalize;
   margin-top: 0;
-  @include sm{
-    strong{
+  @include sm {
+    strong {
       background: #126da6;
       display: block;
       padding: 15px;
     }
-    &.uk-open{
+
+    &.uk-open {
       position: static;
-      &.uk-animation-enter{
+
+      &.uk-animation-enter {
         position: absolute;
         width: 100%;
       }
     }
-    li a{
+
+    li a {
       border-bottom: 1px solid #005a93;
     }
   }
 }
+
 #js-gh-navbar,
 .gh-dropdown,
 .gh-navbar {
@@ -237,14 +340,145 @@ body {
 }
 
 .gh-toggle-menu {
-  li:not(:last-child){
-      border-right: 1px solid #0c4d77;
+  li:not(:last-child) {
+    border-right: 1px solid #0c4d77;
   }
+
   li a {
     display: block;
     padding: 8px;
     @include txt-color(#fff, var(--white-main));
     font-size: 9pt;
+  }
+}
+/*Slider Class*/
 
+.gh-bg-slider {
+  width: 100%;
+  height: 100%;
+  @include sm {
+    height: auto;
+  }
+}
+
+.uk-slideshow-items {
+  @include sm {
+    min-height: 90px!important;
+    height: unset!important;
+  }
+}
+
+.uk-hidden-hover[uk-slideshow-item] {
+  background-color: rgba(#0d4399, 0.5);
+}
+
+.uk-dotnav > li > a {
+  background-color: rgba(#333, 0.5)!important;
+}
+
+.uk-dotnav > li.uk-active > a {
+  background-color: #0d4399!important;
+}
+/* Form Search Class*/
+
+.gh-domain-search {
+  @include sm {
+    input::placeholder {
+      font-size: 12pt;
+    }
+  }
+
+  li > span {
+    font-size: 14pt;
+
+    &:first-child {
+      margin-right: 5px;
+      color: var(--white-main);
+    }
+
+    &:last-child {
+      color: var(--red-main);
+    }
+    @include sm {
+      font-size: 9pt;
+    }
+  }
+}
+.gh-main-list{
+  li a{
+    padding: 8px 0;
+    display: block;
+    word-wrap: break-word;
+    @include txt-color(var(--secondary), var(--blue-main));
+  }
+}
+.gh-slider-bottom{
+  li{
+    display: block;
+    text-align: center;
+    img{
+      max-width: 100%;
+    }
+  }
+}
+
+/* Footer Class */
+.gh-footer-list{
+  li {
+    font-size: 11pt;
+    a{
+      display: inline-block;
+      padding: 3px 0;
+      @include txt-color(#777, #333);
+
+    }
+  }
+}
+.gh-social-link{
+  width: 100%;
+  li{
+    flex: 1;
+    a{
+      &.facebook{
+        @include txt-color(var(--blue-main), var(--fb-color));
+      }
+      &.google-plus{
+        @include txt-color(var(--blue-main), var(--google-plus-color));
+      }
+      &.youtube{
+        @include txt-color(var(--blue-main), var(--youtube-color));
+      }
+      &.twitter{
+        @include txt-color(var(--blue-main), var(--twitter-color));
+      }
+      &.instagram{
+        @include txt-color(var(--blue-main), var(--instagram-color));
+      }
+    }
+  }
+}
+.gh-copyright{
+  a{
+    @include txt-color(#fff, #333);
+  }
+}
+.gh-footer-fixed{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  li{
+    flex: 1;
+    padding: 7px 0;
+    text-align: center;
+    &:not(:last-child){
+      a{
+        border-right: 1px solid rgba(#fff, 0.4);
+      }
+    }
+  }
+  a{
+    display: block;
+    font-size: 11pt;
+    @include txt-color(var(--white-main), #333);
   }
 }

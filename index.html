@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="theme-color" content="#0088cc" />
-<meta name="msapplication-navbutton-color" content="#0088cc" />
-<meta name="apple-mobile-web-app-status-bar-style" content="#0088cc" />
+<meta name="theme-color" content="#0d4399" />
+<meta name="msapplication-navbutton-color" content="#0d4399" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#0d4399" />
 <meta name="Description" content="" />
 <meta name="Keywords" content="" />
 <meta name="Classification" content="Personal" />
@@ -166,8 +166,8 @@
                   Nhà đăng ký chính thức tên miền Việt Nam
                 </strong>
                 <a id="lang-select" href="#" class="d-md-inline-block bg-red-main text-white py-md-1 px-md-2 ml-md-2 rounded text-uppercase uk-text-bold">EN</a>
-                <div class="bg-blue-main shadow p-0" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500; toggle: #lang-select; pos: bottom-center">
-                  <ul class="nolist gh-lang-slc">
+                <div class="no-bg" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500; toggle: #lang-select; pos: bottom-center">
+                  <ul class="nolist gh-lang-slc bg-blue-main shadow">
                     <li><a href="#">English</a></li>
                     <li><a href="#">Vietnamese</a></li>
                   </ul>
@@ -181,7 +181,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 bg-blue-main text-md-right">
+          <div class="col-md-3 bg-blue-main">
             <ul class="nolist d-md-inline-flex gh-menu-right">
               <li><a href="#"><i class="mr-2" uk-icon="icon: cart; ratio: .9"></i><span>Giỏ hàng</span></a></li>
               <li><a href="#"><i class="mr-2" uk-icon="icon: user; ratio: .9"></i><span>Đăng ký/Đăng nhập</span></a></li>
@@ -228,9 +228,431 @@
   </div>
 </header>
 
+<div  class="uk-position-relative uk-visible-toggle uk-light"
+      uk-slideshow="min-height: 120; max-height: 360; autoplay: true; autoplay-interval: 3000">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img class="gh-bg-slider" src="./public/images/banner-2018-vui-he.jpg" alt="" uk-img>
+        </li>
+        <li>
+            <img class="gh-bg-slider" src="./public/images/banner-2018-vui-he.jpg" alt="" uk-img>
+        </li>
+        <li>
+            <img class="gh-bg-slider" src="./public/images/banner-2018-vui-he.jpg" alt="" uk-img>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    <ul class="uk-position-bottom uk-slideshow-nav uk-dotnav uk-flex-center uk-margin d-md-inline-flex d-none"></ul>
+</div>
+
     <main>
+      <section class="bg-blue-main gh-domain-search">
+  <div class="uk-container py-5">
+    <form class="" action="index.html" method="post">
+      <div class="px-3">
+        <div class="row">
+          <input class="uk-input uk-width-4-5@m uk-form-large" placeholder="Nhập tên miền bạn muốn kiểm tra">
+          <button class="uk-width-expand uk-button uk-button-danger uk-button-large">
+            <i uk-icon="icon: search" class="mr-2"></i><span>Kiểm Tra</span>
+          </button>
+        </div>
+        <div class="d-block pt-3 text-center">
+          <ul class="nolist d-inline-flex">
+            <li class="uk-text-bold p-2">
+              <span>.modi</span>
+              <span>99k</span>
+            </li>
+            <li class="uk-text-bold p-2">
+              <span>.com</span>
+              <span>234k</span>
+            </li>
+            <li class="uk-text-bold p-2">
+              <span>.top</span>
+              <span>40k</span>
+            </li>
+            <li class="uk-text-bold p-2">
+              <span>.net</span>
+              <span>252k</span>
+            </li>
+            <li class="uk-text-bold p-2">
+              <span>.vn</span>
+              <span>750k</span>
+            </li>
+            <li class="uk-text-bold p-2">
+              <span>.com.vn</span>
+              <span>630k</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+      <section>
+        <div class="uk container py-md-5 py-3">
+          <h2 class="gh-home-title gh-border-center uk-h4 py-md-4 py-3 text-blue-main">
+            Dịch vụ <strong>Chất</strong> Nhất, Giá <strong>Mềm</strong> Nhất
+          </h2>
+          <div class="row align-items-center">
+            <div class="col-md-4 order-md-1 order-2">
+              <div class="row mb-2">
+                <div class="col-md-10 col-9 text-md-right order-md-1 pr-0 order-2">
+                  <h3 class="uk-text-bold uk-h5 my-0">Tên miền</h3>
+                  <p class="my-0 text-muted uk-text-small">Nhà đăng ký chính thức tên miền hàng đầu Việt Nam</p>
+                </div>
+                <div class="col-md-2 col-3 order-md-2 order-1">
+                  <img src="./public/images/icon/www.png" alt="" class="d-inline-block">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-10 col-9 text-md-right order-md-1 pr-0 order-2">
+                  <h3 class="uk-text-bold uk-h5 my-0">Hosting</h3>
+                  <p class="my-0 text-muted uk-text-small">
+                    Chúng tôi giúp bạn lưu trữ website nhanh nhất, an toàn nhất, hiệu quả nhất
+                  </p>
+                </div>
+                <div class="col-md-2 col-3 order-md-2 order-1">
+                  <img src="./public/images/icon/hosting.png" alt="" class="d-inline-block">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-10 col-9 text-md-right order-md-1 pr-0 order-2">
+                  <h3 class="uk-text-bold uk-h5 my-0">Server</h3>
+                  <p class="my-0 text-muted uk-text-small">
+                    Dịch vụ cho thuê mấy chủ/máy chủ ảo với lượng lưu trữ lớn, bảo mật cao
+                  </p>
+                </div>
+                <div class="col-md-2 col-3 order-md-2 order-1">
+                  <img src="./public/images/icon/server.png" alt="" class="d-inline-block">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 order-3">
+              <div class="row mb-2">
+                <div class="col-md-10 col-9 order-2 pl-md-0">
+                  <h3 class="uk-text-bold uk-h5 my-0">Email</h3>
+                  <p class="my-0 text-muted uk-text-small">Nhà đăng ký chính thức tên miền hàng đầu Việt Nam</p>
+                </div>
+                <div class="col-md-2 col-3 order-1">
+                  <img src="./public/images/icon/mail.png" alt="" class="d-inline-block">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-10 col-9 order-2 pl-md-0">
+                  <h3 class="uk-text-bold uk-h5 my-0">Thiết Kế Website</h3>
+                  <p class="my-0 text-muted uk-text-small">Nhà đăng ký chính thức tên miền hàng đầu Việt Nam</p>
+                </div>
+                <div class="col-md-2 col-3 order-1">
+                  <img src="./public/images/icon/design.png" alt="" class="d-inline-block">
+                </div>
+              </div>
+              <div class="row mb-2">
+                <div class="col-md-10 col-9 order-2 pl-md-0">
+                  <h3 class="uk-text-bold uk-h5 my-0">Dịch Vụ Khác</h3>
+                  <p class="my-0 text-muted uk-text-small">Nhà đăng ký chính thức tên miền hàng đầu Việt Nam</p>
+                </div>
+                <div class="col-md-2 col-3 order-1">
+                  <img src="./public/images/icon/service.png" alt="" class="d-inline-block">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 order-md-2 order-1 mb-md-0 mb-3">
+              <img src="./public/images/technology.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="uk-container py-md-5 py-3">
+          <div class="row">
+            <div class="col-md-4 uk-background-contain d-md-block d-none" style="background-size: 100% 100%;" data-src="./public/images/Connect.jpg" uk-img></div>
+            <div class="col-md-8">
+              <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-blue-main">
+                <strong>Lợi Thế</strong> Của ESC Chúng Tôi
+              </h2>
+              <div class="row mb-2 align-items-center">
+                <div class="col-md-2 text-md-right text-center mb-md-0 mb-3">
+                  <div class="p-3 border border-blue-main rounded-circle d-inline-block">
+                    <img class="" src="./public/images/icon/exp.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-10 text-md-left text-center">
+                  <h3 class="uk-text-bold uk-h5 my-0">14 năm kinh nghiệm</h3>
+                  <p class="my-0 text-muted uk-text-small">
+                    Với đội ngũ nhân viên trẻ, nhiệt huyết, năng cùng cùng bề dày 14 năm kinh nghiệm,
+                    ESC tự tin phục vụ tốt nhất mọi yêu cẩu của khách hàng
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-2 align-items-center mb-md-0 mb-3">
+                <div class="col-md-2 text-md-right text-center mb-md-0 mb-3">
+                  <div class="p-3 border border-blue-main rounded-circle d-inline-block">
+                    <img class="" src="./public/images/icon/solution.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-10 text-md-left text-center">
+                  <h3 class="uk-text-bold uk-h5 my-0">Giải pháp tốt nhất</h3>
+                  <p class="my-0 text-muted uk-text-small">
+                    ESC cung cấp các giải pháp hiệu quả nhất, tối ưu nhất nhưng với chi phí thấp nhất
+                    nhằm giúp khách hàng đạt hiểu quả kinh doanh tốt nhất
+                  </p>
+                </div>
+              </div>
+              <div class="row mb-2 align-items-center mb-md-0 mb-3">
+                <div class="col-md-2 text-md-right text-center mb-md-0 mb-3">
+                  <div class="p-3 border border-blue-main rounded-circle d-inline-block">
+                    <img class="" src="./public/images/icon/pro.png" alt="">
+                  </div>
+                </div>
+                <div class="col-md-10 text-md-left text-center">
+                  <h3 class="uk-text-bold uk-h5 my-0">Dịch vụ chuyên nghiệp</h3>
+                  <p class="my-0 text-muted uk-text-small">
+                    ESC cung cấp các giải pháp hiệu quả nhất, tối ưu nhất nhưng với chi phí thấp nhất
+                    nhằm giúp khách hàng đạt hiểu quả kinh doanh tốt nhất
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="uk-container py-md-5 py-3">
+          <div class="row">
+            <div class="col-md-6">
+              <h2 class="gh-home-title gh-border-left uk-h4 py-md-4 py-3 text-blue-main">
+                <strong>Tin Tức</strong> Và <strong>Sự Kiện</strong>
+              </h2>
+              <ul class="nolist d-block gh-main-list">
+                <li><a href="#">Tổng cục Thuế tiết lộ bí quyết phát hiện những vụ lậu thuế triệu đô của cá nhân thu từ Facebook, Google</a></li>
+                <li><a href="#">Bộ TT&TT phê duyệt danh sách tên miền “.VN” cấp quyền sử dụng thông qua đấu giá</a></li>
+                <li><a href="#">VNNIC mở rộng phạm vi chứng nhận hệ thống quản lý ATTT theo tiêu chuẩn quốc tế</a></li>
+                <li><a href="#">Quy trình thiết kế website chuyên nghiệp</a></li>
+                <li><a href="#">Cách chọn tên miền phù hợp và chuẩn SEO</a></li>
+                <li><a href="#">Hãy dừng việc lạm dụng Meta Keyword với SEO hiện đại</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <h2 class="gh-home-title gh-border-left uk-h4 py-md-4 py-3 text-blue-main">
+                <strong>Thông Báo</strong> Từ ESC
+              </h2>
+              <ul class="nolist d-block gh-main-list">
+                <li><a href="">Chính thức triển khai công nghệ DNSSEC tại Việt Nam</a></li>
+                <li><a href="">ESC – Chương trình khuyến mãi sốc dịp hè 2018</a></li>
+                <li><a href="">Thông báo về tình hình tuyến cáp quang biển AAG tháng 6/2018</a></li>
+                <li><a href="">Dịch vụ Locking domain là gì?</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+  <div class="uk-container uk-overflow-hidden py-md-5 py-3 border-top border-muted">
+    <div
+    class="uk-position-relative uk-visible-toggle gh-slider-bottom"
+    uk-slider="autoplay: true; autoplay-interval: 3000; loop: true">
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-child-width-1-6@l">
+        <li>
+            <img src="./public/images/logo/footer-logo-edocv2.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-enetvn.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-inetvn.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-enomvn.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-member.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-vn.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-onlinenic.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-vnnic.jpg" alt="">
+        </li>
+        <li>
+            <img src="./public/images/logo/footer-logo-wscomvn.jpg" alt="">
+        </li>
+    </ul>
+  </div>
+  </div>
+</section>
     </main>
-<footer>
+<footer class="bg-light">
+  <div class="uk-container py-md-5 py-3">
+    <div class="row gh-footer-list">
+      <div class="col-md-4 mb-3">
+        <address class="mb-3 d-block">
+          <strong class="text-uppercase d-block mb-2">HỒ CHÍ MINH</strong>
+          <ul class="nolist text-muted">
+            <li>A16 đường số 18, P. Hiệp Bình Chánh, Quận Thủ Đức</li>
+            <li><b class="text-dark">Điện thoại</b>: (028) 6284 3035 - (028) 629 44 808</li>
+            <li><b class="text-dark">Fax</b>: (028) 6258 14 09</li>
+            <li><b class="text-dark">Mail</b>: support@esc.vn</li>
+          </ul>
+        </address>
+        <adress class="mb-3 d-block">
+          <strong class="text-uppercase d-block mb-2">HÀ NỘI</strong>
+          <ul class="nolist text-muted">
+            <li>71 Trần Quốc Toản, Quận Hoàn Kiếm</li>
+            <li><b>Điện thoại</b>: (024) 39 42 68 96</li>
+            <li><b>Fax</b>: (024) 39 42 68 97</li>
+            <li>Mail: support@esc.vn</li>
+          </ul>
+        </adress>
+        <adress class="d-block">
+          <strong class="text-uppercase d-block mb-2">CHI NHÁNH</strong>
+          <ul class="nolist text-muted">
+            <li>Tòa Nhà SBI, CVPM Quang Trung</li>
+            <li><b>Điện thoại</b>: (028) 37 156 156</li>
+            <li><b>Fax</b>: (028) 3717 8666</li>
+          </ul>
+        </adress>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">
+              Tên Miền
+            </h3>
+            <ul class="nolist">
+              <li><a href="/dang-ky-ten-mien">Đăng ký tên miền</a></li>
+              <li><a href="/bang-gia-ten-mien">Bảng giá tên miền</a></li>
+              <li><a href="/ban-khai-dang-ky">Bản khai đăng ký</a></li>
+              <li><a href="/chuyen-ten-mien">Chuyển đổi</a></li>
+              <li><a href="/chuyen-nhuong-ten-mien">Chuyển nhượng</a></li>
+              <li><a href="/loi-ich-khi-dang-ky-tai-esc">Lợi ích đăng ký ESC</a></li>
+              <li><a href="/thu-tuc-dang-ky-ten-mien">Thủ tục đăng ký</a></li>
+              <li><a href="/vong-doi-ten-mien">Vòng đời tên miền</a></li>
+              <li><a href="/toithaytenmien">Tên miền cho sinh viên</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Hosting</h3>
+            <ul class="nolist">
+              <li><a href="/cloud-hosting">Bảng giá hosting</a></li>
+              <li><a href="/giai-phap-hosting">Các giải pháp hosting</a></li>
+              <li><a href="/wordpress-hosting">Wordpress hosting</a></li>
+              <li><a href="/hosting-ip-rieng">Hosting IP riêng</a></li>
+              <li><a href="/toithaytenmien/">Hosting cho sinh viên</a></li>
+              <li><a href="/dich-vu-sao-luu-du-lieu/">Dịch vụ sao lưu dữ liệu</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Thiết Kế Web</h3>
+            <ul class="nolist">
+              <li><a target="_blank" href="https://web.esc.vn/goi-dich-vu/">Dịch vụ chuyên nghiệp</a></li>
+              <li><a target="_blank" href="https://web.esc.vn/web-theo-yeu-cau/">Quy trình thiết kế </a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Email</h3>
+            <ul class="nolist">
+              <li><a href="/bang-gia-email">Email server chuyên nghiệp</a></li>
+              <li><a href="/email-server-rieng">Email server riêng</a></li>
+              <li><a href="/email-marketing">Email marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3 order-md-1 order-2">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Kết nối với chúng tôi</h3>
+            <ul class="nolist d-flex gh-social-link">
+              <li><a class="facebook" href="#" uk-icon="icon: facebook; ratio: 1.3"></a></li>
+              <li><a class="twitter" href="#" uk-icon="icon: twitter; ratio: 1.3"></a></li>
+              <li><a class="google-plus" href="#" uk-icon="icon: google-plus; ratio: 1.3"></a></li>
+              <li><a class="youtube" href="#" uk-icon="icon: youtube; ratio: 1.3"></a></li>
+              <li><a class="instagram" href="#" uk-icon="icon: instagram; ratio: 1.3"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3 order-md-2 order-1">
+            <ul class="nolist d-md-block d-flex align-items-center">
+              <li>
+                <a class="p-md-0 p-3 d-block" href="">
+                  <img alt="thong-bao-bo-cong-thuong" src="./public/images/da-thong-baopng.png">
+                </a>
+              </li>
+              <li>
+                <a class="p-md-0 p-3 d-block" href="">
+                  <img alt="thong-bao-bo-cong-thuong" src="./public/images/dmca_protected_sml_120n.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Email</h3>
+            <ul class="nolist">
+              <li><a href="/ecloudvps">eCloud VPS</a></li>
+              <li><a href="/co-location">Colocation</a></li>
+              <li><a href="/dedicated">Dedicated</a></li>
+              <li><a href="/outlet">Outlet</a></li>
+              <li><a href="/vps">VPS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Dịch vụ khác</h3>
+            <ul class="nolist">
+              <li><a href="/parallels-plesk-panel">Plesk</a></li>
+              <li><a href="/cpanel">cPanel</a></li>
+              <li><a href="/directadmin">DirectAdmin</a></li>
+              <li><a target="_blank" href="https://edoc.com.vn">eDoc</a></li>
+              <li><a href="/chung-chi-so-ssl">Chứng chỉ số SSL</a></li>
+              <li><a href="/online-marketing">Quảng cáo Google</a></li>
+              <li><a href="/so-hoa-du-lieu">Số hóa dữ liệu</a></li>
+              <li><a href="/cap-nhat-website">Bảng giá cập nhật website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-blue-main mb-md-5">
+    <div class="uk-container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-light">
+          Copyright © 2017 esc.vn - All rights reserved.
+        </div>
+        <div class="col-md-8 text-md-right text-center">
+          <ul class="nolist d-md-inline-flex gh-copyright">
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Chính sách & Bảo mật</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Thanh toán</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Thỏa thuận sử dụng</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Văn bản pháp lý</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gh-footer-fixed w-100 d-md-block d-none bg-red-main">
+    <div class="uk-container py-1">
+      <ul class="nolist d-flex">
+        <li>
+          <a href="tel:19002069"><span>Hỗ Trợ 24/7:</span> <b>1900 2069</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><span>Kinh doanh TP.HCM:</span> <b>(028) 62 94 48 08</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><span>Kinh doanh Hà Nội:</span> <b>(024) 39 42 68 96</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><b><i uk-icon="comments"></i> (024) 39 42 68 96</b></a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </footer>
 </div>
 
@@ -241,3 +663,4 @@
 </body>
 
 </html>
+
