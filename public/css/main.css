@@ -73,13 +73,23 @@ body {
   position: relative; }
 
 #header {
-  z-index: 1; }
+  z-index: 3; }
 
 main {
-  z-index: 2; }
+  z-index: 1; }
+
+.gh-btn-order {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3b98d2), to(#368dc3));
+  background-image: -o-linear-gradient(top, #3b98d2, #368dc3);
+  background-image: linear-gradient(to bottom, #3b98d2, #368dc3);
+  color: #fff; }
+  .gh-btn-order:hover {
+    color: var(--white-main);
+    background-image: unset;
+    background-color: var(--blue-main); }
 
 #footer {
-  z-index: 3; }
+  z-index: 2; }
 
 .nolist {
   list-style: none;
@@ -318,14 +328,17 @@ main {
   height: 40px;
   width: 40px !important;
   top: unset !important;
-  z-index: 99999; }
+  z-index: -1;
+  position: fixed; }
   .gh-totop:hover {
     background-color: var(--white-main); }
   .gh-totop:hover {
     color: var(--red-main); }
   .gh-totop.gh-active {
+    display: inline-block;
     visibility: visible;
-    display: inline-block; }
+    display: inline-block;
+    z-index: 99999; }
   .gh-totop.gh-unactive {
     visibility: hidden; }
 
@@ -446,6 +459,27 @@ main {
     left: 50%;
     opacity: 1; } }
 
+/* Table Class */
+.gh-table th, .gh-table td {
+  vertical-align: middle !important; }
+  .gh-table th:not(:last-child), .gh-table td:not(:last-child) {
+    border-right: 1px solid #fff; }
+
+.gh-table th {
+  color: #fff; }
+
+.gh-table td {
+  border: 0; }
+  .gh-table td:not(:first-child) {
+    text-align: center; }
+
+.gh-table tbody tr:nth-of-type(2n+1) {
+  background-color: rgba(208, 248, 255, 0.5); }
+
+.gh-table tbody.gh-table-price tr:last-child td:not(:first-child) {
+  color: var(--red-main);
+  font-weight: bold; }
+
 @media screen and (min-width: 769px) {
   .nodesk .uk-offcanvas {
     position: static !important;
@@ -494,9 +528,18 @@ main {
   .gh-navbar {
     position: static; }
     .gh-banner-content {
-      background-color: rgba(255, 255, 255, 0.3); } }
+      background-color: rgba(255, 255, 255, 0.3); }
+    .gh-table th, .gh-table td {
+      font-size: 11pt; }
+    .gh-table td {
+      padding: 10px 12px; } }
 
 @media screen and (max-width: 768px) {
+  .gh-sm-none {
+    display: none; }
+    .gh-btn-order {
+      font-size: 8pt;
+      padding: 5px; }
     .gh-navbar li a {
       padding: 10px 15px;
       border-bottom: 1px solid #333; }
@@ -528,4 +571,11 @@ main {
       font-size: 9pt; }
     .gh-banner-content {
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.7); } }
+      background-color: rgba(255, 255, 255, 0.7); }
+    .gh-table th, .gh-table td {
+      font-size: 9pt; }
+  .gh-table th {
+    font-size: 7pt;
+    padding: 5px !important; }
+    .gh-table td {
+      padding: 5px; } }

@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0d4399" />
+<meta name="msapplication-navbutton-color" content="#0d4399" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#0d4399" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<meta name="Classification" content="Personal" />
+<meta name="Rating" content="General" />
+<meta name="Revisit-After" content="7 Days" />
+<meta name="DC.Description" content="" />
+<meta name="geo.placename" content="Viet Nam" />
+<meta name="geo.region" content="vn" />
+<meta name="DC.Language" content="vn" />
+<meta name="robots" content="index,follow" />
+<meta name="alexaVerifyID" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:image" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="fb:app_id" content="" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/htmll; charset=UTF8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="alternate" href="https://vutaweb.vn" hreflang="vn" />
+    <link rel="stylesheet" href="./public/css/vutaweb.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <title>Document</title>
+</head>
+<body class="montserrat">
+    <div id="app" class="uk-offcanvas-content">
+      <header id="header" class="px-3">
+  <div class="row">
+    <div class="col-12 order-md-2 order-1 nodesk">
+      <div class="uk-container uk-position-relative">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <a href="/" class="gh-header-logo py-md-0 py-3 text-md-left text-center d-block">
+              <img src="./public/images/logo.png" alt="">
+            </a>
+          </div>
+          <div id="js-gh-navbar" class="col-md-9 text-md-right" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar p-0">
+              <a href="/" class="py-md-0 py-3 text-md-left text-center d-md-none">
+                <img src="./public/images/logo.png" alt="">
+              </a>
+              <ul class="gh-navbar nolist d-md-inline-flex text-uppercase">
+                <li><a class="active" href="#">Tất cả trang</a></li>
+                <li><a href="#">Tên Miền</a></li>
+                <li><a href="#">Hosting</a></li>
+                <li class="gh-dropdown">
+                  <a href="#">Email</a>
+                  <div uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500" class="gh-dropdown-expand bg-blue-main py-md-4 p-0">
+                    <div class="uk-container">
+                      <div class="row align-items-start">
+                        <div class="col-md-4 border-right border-white text-white uk-text-small d-md-block d-none">
+                          Email server là dịch vụ email chuyên nghiệp với thương hiệu riêng. Chúng tôi sẽ giúp bạn có hệ thống email theo tên miền dung lượng lớn và bảo mật cao.
+                        </div>
+                        <div class="col-md-3 px-md-3 px-0">
+                          <strong class="mb-2 text-uppercase text-white-main d-block">EMAIL</strong>
+                          <ul class="nolist">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-database"></i>
+                                <span>Email chuyên nghiệp</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-lock"></i>
+                                <span>Email server riêng</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-thumbs-up"></i>
+                                <span>Google Email</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                <span>Email marketing</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 px-md-3 px-0">
+                          <strong class="mb-2 text-uppercase text-white-main d-block">support 24/7</strong>
+                          <ul class="nolist">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-check"></i>
+                                <span>Ticket</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-check"></i>
+                                <span>Kiến thức</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 d-md-block d-none">
+                          <img data-src="./public/images/email-bg.png" alt="" uk-img>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="gh-dropdown">
+                  <a href="#">Server</a>
+                  <div class="bg-blue-main" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500">
+                    <ul class="nolist">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-database"></i>
+                          <span>Email chuyên nghiệp</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-lock"></i>
+                          <span>Email server riêng</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-thumbs-up"></i>
+                          <span>Google Email</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-envelope"></i>
+                          <span>Email marketing</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Thiết Kế Web</a></li>
+                <li><a href="#">Dịch Vụ Khác</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 order-md-1 order-2 gh-header d-none d-md-block">
+      <div class="uk-container">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <div class="row align-items-center">
+              <div class="col-md-7 text-uppercase">
+                <strong class="uk-text-small">
+                  Nhà đăng ký chính thức tên miền Việt Nam
+                </strong>
+                <a id="lang-select" href="#" class="d-md-inline-block bg-red-main text-white py-md-1 px-md-2 ml-md-2 rounded text-uppercase uk-text-bold">EN</a>
+                <div class="no-bg" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500; toggle: #lang-select; pos: bottom-center">
+                  <ul class="nolist gh-lang-slc bg-blue-main shadow">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Vietnamese</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 text-md-right bg-menu-color">
+                <ul class="nolist d-inline-flex">
+                  <li><a class="d-block px-3 py-2" href="#">Hỗ Trợ</a></li>
+                  <li><a class="d-block px-3 py-2" href="#">Liên Hệ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bg-blue-main">
+            <ul class="nolist d-md-inline-flex gh-menu-right">
+              <li><a href="#"><i class="mr-2" uk-icon="icon: cart; ratio: .9"></i><span>Giỏ hàng</span></a></li>
+              <li><a href="#"><i class="mr-2" uk-icon="icon: user; ratio: .9"></i><span>Đăng ký/Đăng nhập</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 order-2 d-md-none bg-blue-main gh-toggle-menu px-0">
+      <ul class="row text-center nolist">
+        <li class="text-center col-3 px-1">
+          <a id="mobile-lang-slc" href="#">
+            <i class="d-block mb-1" uk-icon="icon: world"></i>
+            <span>EN</span>
+          </a>
+        </li>
+        <li class="col-3 px-1">
+          <a href="#">
+            <i class="d-block mb-1" uk-icon="icon: cart"></i>
+            <span>Giỏ Hàng</span>
+          </a>
+        </li>
+        <li class="col-3 px-1">
+          <a href="#">
+            <i class="d-block mb-1" uk-icon="icon: user"></i>
+            <span>Tài khoản</span>
+          </a>
+        </li>
+        <li class="col-3 px-1">
+          <a href="#js-gh-navbar" uk-toggle>
+            <i class="d-block mb-1" uk-icon="icon: menu"></i>
+            <span>Menu</span>
+          </a>
+        </li>
+      </ul>
+
+      <div uk-dropdown="toggle: #mobile-lang-slc;animation: uk-animation-slide-bottom-small; duration: 500" class="w-100 gh-dropdown-expand bg-blue-main mt-0 p-0">
+        <ul class="nolist w-100 mt-0">
+          <li><a href="#">English</a></li>
+          <li><a href="#">Vietnamese</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+      <a class="gh-totop" href="#app" uk-scroll uk-sticky="cls-active: gh-active; cls-inactive: gh-unactive; animation: uk-animation-fade">
+        <span class="uk-position-relative" uk-icon="icon: chevron-up; ratio: 2"></span>
+      </a>
+
+  <main>
+    <section class="uk-position-relative py-md-5 py-3 gh-banner" data-src="./public/images/cloud.jpg" uk-img>
+      <div class="uk-container">
+        <div class="row">
+          <div class="col-md-4 gh-banner-content shadow py-md-5 py-0">
+            <h2 class="uk-h3 text-uppercase text-blue-main my-0">
+              cloud hosting
+            </h2>
+            <p class="my-0 uk-text-bold">
+              Hosting chất lượng cao cộng nghệ
+            </p>
+            <p class="my-1 uk-text-bold">
+              ĐIỆN TOÁN ĐÁM MÂY lưu trữ SSD MẠNH NHẤT
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="uk-container py-md-5 py-3 gh-table px-md-3 px-0">
+        <table class="table table-striped uk-table-small">
+          <thead class="bg-blue-main text-uppercase text-white">
+            <tr>
+              <th class="uk-width-medium">
+                gói dịch vụ
+              </th>
+              <th class="uk-width-small">
+                <div class="d-block text-center">basic</div>
+                <div class="d-block text-center">(s50)</div>
+              </th>
+              <th class="uk-width-small">
+                <div class="d-block text-center">Standand</div>
+                <div class="d-block text-center">(s100)</div>
+              </th>
+              <th class="uk-width-small">
+                <div class="d-block text-center">Standand+</div>
+                <div class="d-block text-center">(s200)</div>
+              </th>
+              <th class="uk-width-small gh-sm-none">
+                <div class="d-block text-center">Pro</div>
+                <div class="d-block text-center">(s300)</div>
+              </th>
+              <th class="uk-width-small gh-sm-none">
+                <div class="d-block text-center">Pro+</div>
+                <div class="d-block text-center">(s500)</div>
+              </th>
+              <th class="uk-width-small gh-sm-none">
+                <div class="d-block text-center">ecom</div>
+                <div class="d-block text-center">(s1000)</div>
+              </th>
+              <th class="uk-width-small gh-sm-none">
+                <div class="d-block text-center">ecom+</div>
+                <div class="d-block text-center">(s2000)</div>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="gh-table-price">
+            <tr>
+              <td>Dung lượng (GB)</td>
+              <td>800</td>
+              <td>1400</td>
+              <td>2200</td>
+              <td class="gh-sm-none">3000</td>
+              <td class="gh-sm-none">4000</td>
+              <td class="gh-sm-none">6000</td>
+              <td class="gh-sm-none">12000</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>20</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+            </tr>
+            <tr>
+              <td>Email Forwarders</td>
+              <td>20</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+            </tr>
+            <tr>
+              <td>Băng thông (GB)</td>
+              <td>20</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+            </tr>
+            <tr>
+              <td>DB MSSQL/MySQL5</td>
+              <td>3</td>
+              <td>3</td>
+              <td>10</td>
+              <td class="gh-sm-none">20</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">50</td>
+              <td class="gh-sm-none">100</td>
+            </tr>
+            <tr>
+              <td>Subdomain</td>
+              <td>5</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">5</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+            </tr>
+            <tr>
+              <td>User/Website</td>
+              <td>1</td>
+              <td>1</td>
+              <td>2</td>
+              <td class="gh-sm-none">3</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">10</td>
+              <td class="gh-sm-none">15</td>
+            </tr>
+            <tr>
+              <td>Domain Pointers</td>
+              <td>5</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">5</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+            </tr>
+            <tr>
+              <td>ASP / ASP.net / PHP</td>
+              <td><i uk-icon="icon: check; ratio: 1.3"></i></td>
+              <td><i uk-icon="icon: check; ratio: 1.3"></i></td>
+              <td><i uk-icon="icon: check; ratio: 1.3"></i></td>
+              <td class="gh-sm-none"><i uk-icon="icon: check; ratio: 1.3"></i></td>
+              <td class="gh-sm-none"><i uk-icon="icon: check; ratio: 1.3"></i></td>
+              <td class="gh-sm-none"><i uk-icon="icon: check; ratio: 1.3"></i></td>
+              <td class="gh-sm-none"><i uk-icon="icon: check; ratio: 1.3"></i></td>
+            </tr>
+            <tr>
+              <td>Ftp Accounts</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">Unlimited</td>
+              <td class="gh-sm-none">1</td>
+            </tr>
+            <tr>
+              <td>Giá/tháng (VNĐ)</td>
+              <td>60000</td>
+              <td>60000</td>
+              <td>60000</td>
+              <td class="gh-sm-none">60000</td>
+              <td class="gh-sm-none">60000</td>
+              <td class="gh-sm-none">60000</td>
+              <td class="gh-sm-none">60000</td>
+            </tr>
+            <tr>
+              <td>Giá/tháng (VNĐ)</td>
+              <td><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+              <td><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+              <td><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+              <td class="gh-sm-none"><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+              <td class="gh-sm-none"><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+              <td class="gh-sm-none"><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+              <td class="gh-sm-none"><a href="#" class="uk-button uk-button-small gh-btn-order text-uppercase">đăng ký</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="uk-container py-3">
+        <h2 class="gh-home-title gh-border-left uk-h4 py-md-4 py-3 text-blue-main text-uppercase">
+          <strong>Tinh Năng</strong> hosting
+        </h2>
+        <div class="d-block py-3 gh-table">
+          <div class="row">
+            <div class="col-md-4 px-0">
+              <table class="table table-striped uk-table-small mb-md-3 mb-0">
+                <tbody>
+                  <tr>
+                    <td>Hệ điều hành</td>
+                    <td class="uk-text-bold text-md-center text-right">Linux/Window</td>
+                  </tr>
+                  <tr>
+                    <td>Dung lượng</td>
+                    <td class="uk-text-bold text-md-center text-right">Theo Gói</td>
+                  </tr>
+                  <tr>
+                    <td>DNS riêng</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DNS riêng</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Anonymous DNS</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Control Panel</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>POP3/IMAP email accounts</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mail Forwarding addresses</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>User Aliases</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Email Responders</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sub Domains</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>MySQL/Mariadb Databases</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft SQL 2008 / 20012 /2016</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft Active Server Pages/ PHP</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Web Based Email</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Addons support</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-4 px-0">
+              <table class="table table-striped uk-table-small mb-md-3 mb-0">
+                <tbody>
+                  <tr>
+                    <td>Hệ điều hành</td>
+                    <td class="uk-text-bold text-md-center text-right">Linux/Window</td>
+                  </tr>
+                  <tr>
+                    <td>Dung lượng</td>
+                    <td class="uk-text-bold text-md-center text-right">Theo Gói</td>
+                  </tr>
+                  <tr>
+                    <td>DNS riêng</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DNS riêng</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Anonymous DNS</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Control Panel</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>POP3/IMAP email accounts</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mail Forwarding addresses</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>User Aliases</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Email Responders</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sub Domains</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>MySQL/Mariadb Databases</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft SQL 2008 / 20012 /2016</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft Active Server Pages/ PHP</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Web Based Email</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Addons support</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-4 px-0">
+              <table class="table table-striped uk-table-small mb-md-3 mb-0">
+                <tbody>
+                  <tr>
+                    <td>Hệ điều hành</td>
+                    <td class="uk-text-bold text-md-center text-right">Linux/Window</td>
+                  </tr>
+                  <tr>
+                    <td>Dung lượng</td>
+                    <td class="uk-text-bold text-md-center text-right">Theo Gói</td>
+                  </tr>
+                  <tr>
+                    <td>DNS riêng</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>DNS riêng</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Anonymous DNS</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Control Panel</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>POP3/IMAP email accounts</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Mail Forwarding addresses</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>User Aliases</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Email Responders</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Sub Domains</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>MySQL/Mariadb Databases</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft SQL 2008 / 20012 /2016</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft Active Server Pages/ PHP</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Web Based Email</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Addons support</td>
+                    <td class="uk-text-bold text-md-center text-right">
+                      <i uk-icon="icon: check; ration: 1.2"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="uk-container py-md-5 py-3">
+        <div class="row">
+          <div class="col-md-6 uk-background-contain d-md-block d-none" style="background-size: 100% 100%;" data-src="./public/images/server.jpg" uk-img></div>
+          <div class="col-md-6">
+            <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-blue-main text-uppercase">
+              Dịch Vụ <strong>Gia tăng</strong>
+            </h2>
+            <p class="text-blue-main">
+              Nhanh nhất, dễ sử dụng nhất, an toàn và bảo mật cao nhất!
+            </p>
+            <p class="uk-text-meta">Lưu trữ trang web của bạn trên nền tảng công nghệ điện toán đám mây với hiệu suất cao nhất, tại Data Center tốt nhất và an toàn nhất.</p>
+            <ul class="nolist uk-text-bold">
+              <li>Đảm bảo Uptime 99,99%</li>
+              <li>Hỗ trợ kỹ thuật miễn phí 24/7</li>
+              <li>Kích hoạt ngay sau khi đăng ký.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="bg-light">
+  <div class="uk-container py-md-5 py-3">
+    <div class="row gh-footer-list">
+      <div class="col-md-4 mb-3">
+        <address class="mb-3 d-block">
+          <strong class="text-uppercase d-block mb-2">HỒ CHÍ MINH</strong>
+          <ul class="nolist text-muted">
+            <li>A16 đường số 18, P. Hiệp Bình Chánh, Quận Thủ Đức</li>
+            <li><b class="text-dark">Điện thoại</b>: (028) 6284 3035 - (028) 629 44 808</li>
+            <li><b class="text-dark">Fax</b>: (028) 6258 14 09</li>
+            <li><b class="text-dark">Mail</b>: support@esc.vn</li>
+          </ul>
+        </address>
+        <adress class="mb-3 d-block">
+          <strong class="text-uppercase d-block mb-2">HÀ NỘI</strong>
+          <ul class="nolist text-muted">
+            <li>71 Trần Quốc Toản, Quận Hoàn Kiếm</li>
+            <li><b>Điện thoại</b>: (024) 39 42 68 96</li>
+            <li><b>Fax</b>: (024) 39 42 68 97</li>
+            <li>Mail: support@esc.vn</li>
+          </ul>
+        </adress>
+        <adress class="d-block">
+          <strong class="text-uppercase d-block mb-2">CHI NHÁNH</strong>
+          <ul class="nolist text-muted">
+            <li>Tòa Nhà SBI, CVPM Quang Trung</li>
+            <li><b>Điện thoại</b>: (028) 37 156 156</li>
+            <li><b>Fax</b>: (028) 3717 8666</li>
+          </ul>
+        </adress>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">
+              Tên Miền
+            </h3>
+            <ul class="nolist">
+              <li><a href="/dang-ky-ten-mien">Đăng ký tên miền</a></li>
+              <li><a href="/bang-gia-ten-mien">Bảng giá tên miền</a></li>
+              <li><a href="/ban-khai-dang-ky">Bản khai đăng ký</a></li>
+              <li><a href="/chuyen-ten-mien">Chuyển đổi</a></li>
+              <li><a href="/chuyen-nhuong-ten-mien">Chuyển nhượng</a></li>
+              <li><a href="/loi-ich-khi-dang-ky-tai-esc">Lợi ích đăng ký ESC</a></li>
+              <li><a href="/thu-tuc-dang-ky-ten-mien">Thủ tục đăng ký</a></li>
+              <li><a href="/vong-doi-ten-mien">Vòng đời tên miền</a></li>
+              <li><a href="/toithaytenmien">Tên miền cho sinh viên</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Hosting</h3>
+            <ul class="nolist">
+              <li><a href="/cloud-hosting">Bảng giá hosting</a></li>
+              <li><a href="/giai-phap-hosting">Các giải pháp hosting</a></li>
+              <li><a href="/wordpress-hosting">Wordpress hosting</a></li>
+              <li><a href="/hosting-ip-rieng">Hosting IP riêng</a></li>
+              <li><a href="/toithaytenmien/">Hosting cho sinh viên</a></li>
+              <li><a href="/dich-vu-sao-luu-du-lieu/">Dịch vụ sao lưu dữ liệu</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Thiết Kế Web</h3>
+            <ul class="nolist">
+              <li><a target="_blank" href="https://web.esc.vn/goi-dich-vu/">Dịch vụ chuyên nghiệp</a></li>
+              <li><a target="_blank" href="https://web.esc.vn/web-theo-yeu-cau/">Quy trình thiết kế </a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Email</h3>
+            <ul class="nolist">
+              <li><a href="/bang-gia-email">Email server chuyên nghiệp</a></li>
+              <li><a href="/email-server-rieng">Email server riêng</a></li>
+              <li><a href="/email-marketing">Email marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3 order-md-1 order-2">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Kết nối với chúng tôi</h3>
+            <ul class="nolist d-flex gh-social-link">
+              <li><a class="facebook" href="#" uk-icon="icon: facebook; ratio: 1.3"></a></li>
+              <li><a class="twitter" href="#" uk-icon="icon: twitter; ratio: 1.3"></a></li>
+              <li><a class="google-plus" href="#" uk-icon="icon: google-plus; ratio: 1.3"></a></li>
+              <li><a class="youtube" href="#" uk-icon="icon: youtube; ratio: 1.3"></a></li>
+              <li><a class="instagram" href="#" uk-icon="icon: instagram; ratio: 1.3"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3 order-md-2 order-1">
+            <ul class="nolist d-md-block d-flex align-items-center">
+              <li>
+                <a class="p-md-0 p-3 d-block" href="">
+                  <img alt="thong-bao-bo-cong-thuong" src="./public/images/da-thong-baopng.png">
+                </a>
+              </li>
+              <li>
+                <a class="p-md-0 p-3 d-block" href="">
+                  <img alt="thong-bao-bo-cong-thuong" src="./public/images/dmca_protected_sml_120n.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Email</h3>
+            <ul class="nolist">
+              <li><a href="/ecloudvps">eCloud VPS</a></li>
+              <li><a href="/co-location">Colocation</a></li>
+              <li><a href="/dedicated">Dedicated</a></li>
+              <li><a href="/outlet">Outlet</a></li>
+              <li><a href="/vps">VPS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Dịch vụ khác</h3>
+            <ul class="nolist">
+              <li><a href="/parallels-plesk-panel">Plesk</a></li>
+              <li><a href="/cpanel">cPanel</a></li>
+              <li><a href="/directadmin">DirectAdmin</a></li>
+              <li><a target="_blank" href="https://edoc.com.vn">eDoc</a></li>
+              <li><a href="/chung-chi-so-ssl">Chứng chỉ số SSL</a></li>
+              <li><a href="/online-marketing">Quảng cáo Google</a></li>
+              <li><a href="/so-hoa-du-lieu">Số hóa dữ liệu</a></li>
+              <li><a href="/cap-nhat-website">Bảng giá cập nhật website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-blue-main mb-md-5">
+    <div class="uk-container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-light">
+          Copyright © 2017 esc.vn - All rights reserved.
+        </div>
+        <div class="col-md-8 text-md-right text-center">
+          <ul class="nolist d-md-inline-flex gh-copyright">
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Chính sách & Bảo mật</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Thanh toán</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Thỏa thuận sử dụng</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Văn bản pháp lý</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gh-footer-fixed w-100 d-md-block d-none bg-red-main">
+    <div class="uk-container py-1">
+      <ul class="nolist d-flex">
+        <li>
+          <a href="tel:19002069"><span>Hỗ Trợ 24/7:</span> <b>1900 2069</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><span>Kinh doanh TP.HCM:</span> <b>(028) 62 94 48 08</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><span>Kinh doanh Hà Nội:</span> <b>(024) 39 42 68 96</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><b><i uk-icon="comments"></i> (024) 39 42 68 96</b></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="./public/js/jquery-3.3.1.min.js"></script>
+<script src="./public/js/uikit.min.js"></script>
+<script src="./public/js/uikit-icons.min.js"></script>
+<script src="./public/js/main.js"></script>
+</body>
+
+</html>
+

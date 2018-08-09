@@ -97,20 +97,37 @@ body {
   position: relative;
 }
 #header{
-  z-index: 1;
+  z-index: 3;
 }
 main{
-  z-index: 2;
+  z-index: 1;
+}
+.gh-sm-none{
+  @include sm{
+    display: none;
+  }
+}
+.gh-btn-order{
+  background-image: linear-gradient(to bottom, #3b98d2, #368dc3);
+  color: #fff;
+  &:hover{
+    color: var(--white-main);
+    background-image: unset;
+    background-color: var(--blue-main);
+  }
+  @include sm{
+    font-size: 8pt;
+    padding: 5px;
+  }
 }
 #footer{
-  z-index: 3;
+  z-index: 2;
 }
 .nolist {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
-
 .gh-home-title {
   position: relative;
   text-transform: uppercase;
@@ -511,10 +528,13 @@ main{
   height: 40px;
   width: 40px!important;
   top: unset!important;
-  z-index: 99999;
+  z-index: -1;
+  position: fixed;
   &.gh-active{
+    display: inline-block;
     visibility: visible;
     display: inline-block;
+    z-index: 99999;
   }
   &.gh-unactive{
     visibility: hidden;
@@ -647,4 +667,58 @@ main{
     left: 50%;
     opacity: 1;
   }
+}
+/* Table Class */
+
+.gh-table{
+  th, td{
+    vertical-align: middle!important;
+    @include md{
+      font-size: 11pt
+    }
+    @include sm{
+      font-size: 9pt
+    }
+    &:not(:last-child){
+      border-right: 1px solid #fff;
+    }
+  }
+  th{
+    @include sm{
+      font-size: 7pt;
+      padding: 5px!important;
+    }
+  }
+  th{
+    color: #fff;
+  }
+  td{
+    @include md{
+      padding: 10px 12px;
+    }
+    @include sm{
+      padding: 5px;
+    }
+    border: 0;
+    &:not(:first-child){
+      text-align: center;
+    }
+  }
+  tbody {
+    tr{
+      &:nth-of-type(2n+1){
+        background-color: rgba(208, 248, 255, 0.5);
+      }
+    }
+
+    &.gh-table-price tr{
+      &:last-child{
+        td:not(:first-child){
+          color: var(--red-main);
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
 }
