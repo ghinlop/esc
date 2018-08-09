@@ -29,7 +29,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="Content-Type" content="text/htmll; charset=UTF8" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
     <link rel="alternate" href="https://vutaweb.vn" hreflang="vn" />
     <link rel="stylesheet" href="./public/css/vutaweb.css" />
     <link rel="stylesheet" href="./public/css/main.css" />
@@ -37,7 +37,7 @@
 </head>
 <body class="montserrat">
     <div id="app" class="uk-offcanvas-content">
-      <header class="px-3">
+      <header id="header" class="px-3">
   <div class="row">
     <div class="col-12 order-md-2 order-1 nodesk">
       <div class="uk-container uk-position-relative">
@@ -227,6 +227,9 @@
     </div>
   </div>
 </header>
+      <a class="gh-totop" href="#app" uk-scroll uk-sticky="cls-active: gh-active; cls-inactive: gh-unactive; animation: uk-animation-fade">
+        <span class="uk-position-relative" uk-icon="icon: chevron-up; ratio: 2"></span>
+      </a>
 
 <div  class="uk-position-relative uk-visible-toggle uk-light"
       uk-slideshow="min-height: 120; max-height: 360; autoplay: true; autoplay-interval: 3000">
@@ -374,7 +377,7 @@
               <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-blue-main">
                 <strong>Lợi Thế</strong> Của ESC Chúng Tôi
               </h2>
-              <div class="row mb-2 align-items-center">
+              <div class="row mb-2 align-items-center py-2">
                 <div class="col-md-2 text-md-right text-center mb-md-0 mb-3">
                   <div class="p-3 border border-blue-main rounded-circle d-inline-block">
                     <img class="" src="./public/images/icon/exp.png" alt="">
@@ -388,7 +391,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row mb-2 align-items-center mb-md-0 mb-3">
+              <div class="row mb-2 align-items-center mb-md-0 mb-3 py-2">
                 <div class="col-md-2 text-md-right text-center mb-md-0 mb-3">
                   <div class="p-3 border border-blue-main rounded-circle d-inline-block">
                     <img class="" src="./public/images/icon/solution.png" alt="">
@@ -402,7 +405,7 @@
                   </p>
                 </div>
               </div>
-              <div class="row mb-2 align-items-center mb-md-0 mb-3">
+              <div class="row mb-2 align-items-center mb-md-0 mb-3 py-2">
                 <div class="col-md-2 text-md-right text-center mb-md-0 mb-3">
                   <div class="p-3 border border-blue-main rounded-circle d-inline-block">
                     <img class="" src="./public/images/icon/pro.png" alt="">
@@ -488,7 +491,7 @@
   </div>
 </section>
     </main>
-<footer class="bg-light">
+<footer id="footer" class="bg-light">
   <div class="uk-container py-md-5 py-3">
     <div class="row gh-footer-list">
       <div class="col-md-4 mb-3">

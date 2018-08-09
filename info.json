@@ -4,6 +4,6 @@
     "path_static": "public",
     "dev_path": "dev",
     "css_path": "css",
-    "minify": true,
+    "minify": false,
     "ext": "ejs"
 }

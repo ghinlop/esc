@@ -1,7 +1,0 @@
-{
-    "ejs": {
-        "filters": "ejs",
-        "extends": "html",
-        "profile": "xml"
-    }
-}

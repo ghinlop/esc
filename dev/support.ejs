@@ -1,0 +1,77 @@
+<%- include('./layout/header') %>
+  <main>
+    <%- include('./components/banner-header') -%>
+      <a href="#support-toggle" class="d-md-none d-inline-block gh-support-toggle" uk-toggle>
+        <div class="gh-toggle-content">
+          <i class="fa fa-angle-right fa-lg"></i>
+          <i class="fa fa-angle-right fa-lg"></i>
+        </div>
+      </a>
+      <section>
+        <div class="uk-container py-md-5 py-3">
+          <div class="row nodesk uk-position-relative">
+            <div id="support-toggle" class="col-md-3" uk-offcanvas="overlay: true">
+              <div class="uk-offcanvas-bar bg-blue-main p-0">
+                <div uk-sticky="bottom: #end-sticky; media: (min-width: 769px)">
+                  <ul class="nolist gh-widget-support bg-blue-main" uk-switcher="connect: .gh-support-content">
+                  <li><a href="#" class="uk-offcanvas-close">Tên miền Việt Nam</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">SUPPORT ESC</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Web hosting</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Email hosting</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Máy chủ ảo (VPS)</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">DirectAdmin control panel</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Hệ thống quản lý tên miền </a></li>
+                  <li><a href="#" class="uk-offcanvas-close">và dịch vụ (ORS)</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">DNS & DDNS tại ESC</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Windows server</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Linux server</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Đối tác bán lẻ</a></li>
+                  <li><a href="#" class="uk-offcanvas-close">Chứng chỉ số SSL</a></li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="uk-switcher gh-support-content">
+                <% for(let i = 1; i < 13; i++) { %>
+                  <ul class="nolist" uk-accordion="collapsible: false; active: true">
+                    <% for(let id = 1; id < 12; id++) {%>
+                        <% if(id === 1) {%>
+                          <li class="uk-open">
+                        <%}else{ %>
+                          <li>
+                        <% } %>
+                        <a href="#" class="uk-accordion-title"><%=id%>. Khái niệm chung về tên miền</a>
+                        <div class="uk-accordion-content px-3">
+                          <ul class="nolist" uk-accordion="collapsible: false; active: true">
+                            <% for(let content = 1; content < 5; content++) {%>
+                              <% if(content === 1) {%>
+                                <li class="uk-open">
+                              <%}else{ %>
+                                <li>
+                              <% } %>
+                                <a href="#" class="uk-accordion-title">Thủ tục đăng ký tên miền quốc tế</a>
+                                <article class="uk-accordion-content ">
+                                  Chuyển tên miền quốc tế là chuyển đổi quyền quản lý tên miền từ một Nhà đăng ký về ESC, đồng thời gia hạn tên miền thêm 1 năm nữa.
+                                  Yêu cầu:
+                                  Tên miền ở trạng thái “OK” (không bị lock, có thể chuyển đi). Nếu đang bị lock, vui lòng yêu cầu Nhà đăng ký cũ unlock ra.
+                                  Cung cấp Authcode của tên miền cho ESC để thực hiện.
+                                  Kiểm tra địa chỉ email Administration của tên miền sau khi đã thực hiện lệnh chuyển (email này phải là email đang sử dụng) và làm theo hướng dẫn trên email.
+                                  Tên miền còn hạn ít nhất 15 ngày.
+                                </article>
+                              </li>
+                            <% } %>
+                          </ul>
+                        </div>
+                      </li>
+                    <% } %>
+                  </ul>
+                <% } %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="end-sticky"></div>
+      </section>
+  </main>
+  <%- include('./layout/footer') %>

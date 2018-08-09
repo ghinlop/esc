@@ -3,7 +3,7 @@
 
 <head>
     <%- include('./meta') -%>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
     <link rel="alternate" href="https://vutaweb.vn" hreflang="vn" />
     <link rel="stylesheet" href="./public/css/vutaweb.css" />
     <link rel="stylesheet" href="./public/css/main.css" />
@@ -12,3 +12,6 @@
 <body class="montserrat">
     <div id="app" class="uk-offcanvas-content">
       <%-include('../components/navbar')-%>
+      <a class="gh-totop" href="#app" uk-scroll uk-sticky="cls-active: gh-active; cls-inactive: gh-unactive; animation: uk-animation-fade">
+        <span class="uk-position-relative" uk-icon="icon: chevron-up; ratio: 2"></span>
+      </a>
