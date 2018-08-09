@@ -82,7 +82,8 @@ main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#3b98d2), to(#368dc3));
   background-image: -o-linear-gradient(top, #3b98d2, #368dc3);
   background-image: linear-gradient(to bottom, #3b98d2, #368dc3);
-  color: #fff; }
+  color: #fff;
+  min-width: 60px; }
   .gh-btn-order:hover {
     color: var(--white-main);
     background-image: unset;
@@ -120,7 +121,7 @@ main {
           -ms-transform: translateX(-50%);
               transform: translateX(-50%); }
   .gh-home-title::before {
-    width: 250px;
+    width: 15%;
     border-bottom: 1px solid #999; }
   .gh-home-title::after {
     width: 50px;
@@ -481,6 +482,17 @@ main {
   font-weight: bold; }
 
 @media screen and (min-width: 769px) {
+    .gh-home-title.gh-border-vertical {
+      border-right: 1px solid #999; }
+      .gh-home-title.gh-border-vertical::after {
+        content: unset; }
+      .gh-home-title.gh-border-vertical::before {
+        border-bottom: 0;
+        border-right: 3px solid var(--red-main);
+        right: -2px;
+        top: 0;
+        width: unset;
+        height: 30%; }
   .nodesk .uk-offcanvas {
     position: static !important;
     display: block; }

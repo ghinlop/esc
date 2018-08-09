@@ -110,6 +110,7 @@ main{
 .gh-btn-order{
   background-image: linear-gradient(to bottom, #3b98d2, #368dc3);
   color: #fff;
+  min-width: 60px;
   &:hover{
     color: var(--white-main);
     background-image: unset;
@@ -131,7 +132,23 @@ main{
 .gh-home-title {
   position: relative;
   text-transform: uppercase;
+  &.gh-border-vertical{
 
+    @include md{
+      border-right: 1px solid #999;
+      &::after{
+        content: unset;
+      }
+      &::before{
+        border-bottom: 0;
+        border-right: 3px solid var(--red-main);
+        right: -2px;
+        top: 0;
+        width: unset;
+        height: 30%;
+      }
+    }
+  }
   &::after,
   &::before {
     content: '';
@@ -167,7 +184,7 @@ main{
   }
 
   &::before {
-    width: 250px;
+    width: 15%;
     border-bottom: 1px solid #999;
   }
 
