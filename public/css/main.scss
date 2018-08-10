@@ -3,9 +3,11 @@
 :root {
   /* Main Color & Color Class Global*/
   --blue-main: #0d4399;
+  --light-blue-main: rgba(172, 223, 255, 0.6);
   --white-main: #e6f7ff;
   --red-main: #dd181f;
   --menu-color: #b7ebfe;
+  --table-color: rgba(208, 248, 255, 0.5);
   --no-color: transparent;
   --overlay-color: rgba(0,0,0,0.5);
   --fb-color: #3b5999;
@@ -25,48 +27,9 @@
   --logo-head: 90px;
   --navbar-size: 11pt;
   /* Class Set Global */
-  .text-blue-main {
-    color: var(--blue-main);
-    &span{
-        color: var(--blue-main);
-    }
-  }
-
-  .text-white-main {
-    color: var(--white-main);
-    &span{
-      color: var(--white-main);
-    }
-  }
-  .text-red-main {
-    color: var(--red-main);
-    &span{
-      color: var(--red-main);
-    }
-  }
 
   .no-bg {
     background-color: var(--no-color);
-  }
-
-  .no-color {
-    background-color: var(--no-color);
-  }
-
-  .bg-blue-main {
-    background-color: var(--blue-main);
-  }
-
-  .bg-white-main {
-    background-color: var(--white-main);
-  }
-
-  .bg-red-main {
-    background-color: var(--red-main);
-  }
-
-  .bg-menu-color {
-    background-color: var(--menu-color);
   }
   .border-blue-main{
     border-color: var(--blue-main)!important;
@@ -82,7 +45,12 @@
 body {
   font-family: var(--noto-sans);
 }
-
+@include color-render(light-blue, var(--light-blue-main));
+@include color-render(blue-main, var(--blue-main));
+@include color-render(red-main, var(--red-main));
+@include color-render(white-main, var(--white-main));
+@include color-render(menu-color, var(--menu-color));
+@include color-render(table-color, var(--table-color));
 .uk-offcanvas-overlay::before {
   background-color: var(--overlay-color);
 }
@@ -732,7 +700,7 @@ main{
   tbody {
     tr{
       &:nth-of-type(2n+1){
-        background-color: rgba(208, 248, 255, 0.5);
+        background-color: var(--table-color);
       }
     }
 
@@ -811,6 +779,42 @@ main{
             }
           }
         }
+      }
+    }
+  }
+}
+.gh-plan{
+  .gh-plan-head{
+    padding: 10px 15px;
+    background-color: var(--blue-main);
+    .gh-title{
+      color: #fff;
+      margin-bottom: 0;
+      @include md{
+        font-size: 18pt;
+      }
+      @include sm{
+        font-size: 12pt;
+      }
+    }
+  }
+  .gh-plan-body{
+    background-color: rgba(172, 223, 255, 0.6);
+    position: relative;
+    .gh-plan-button{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 15%);
+      background-color: var(--blue-main);
+      @include txt-color(#fff, #ddd);
+    }
+    .gh-plan-price{
+      color: var(--red-main);
+      @include md{
+        font-size: 20pt;
+      }
+      @include sm{
+        font-size: 15pt;
       }
     }
   }

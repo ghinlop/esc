@@ -1,9 +1,11 @@
 :root {
   /* Main Color & Color Class Global*/
   --blue-main: #0d4399;
+  --light-blue-main: rgba(172, 223, 255, 0.6);
   --white-main: #e6f7ff;
   --red-main: #dd181f;
   --menu-color: #b7ebfe;
+  --table-color: rgba(208, 248, 255, 0.5);
   --no-color: transparent;
   --overlay-color: rgba(0,0,0,0.5);
   --fb-color: #3b5999;
@@ -23,30 +25,8 @@
   --logo-head: 90px;
   --navbar-size: 11pt;
   /* Class Set Global */ }
-  :root .text-blue-main {
-    color: var(--blue-main); }
-    :root .text-blue-mainspan {
-      color: var(--blue-main); }
-  :root .text-white-main {
-    color: var(--white-main); }
-    :root .text-white-mainspan {
-      color: var(--white-main); }
-  :root .text-red-main {
-    color: var(--red-main); }
-    :root .text-red-mainspan {
-      color: var(--red-main); }
   :root .no-bg {
     background-color: var(--no-color); }
-  :root .no-color {
-    background-color: var(--no-color); }
-  :root .bg-blue-main {
-    background-color: var(--blue-main); }
-  :root .bg-white-main {
-    background-color: var(--white-main); }
-  :root .bg-red-main {
-    background-color: var(--red-main); }
-  :root .bg-menu-color {
-    background-color: var(--menu-color); }
   :root .border-blue-main {
     border-color: var(--blue-main) !important; }
   :root .border-red-main {
@@ -57,6 +37,42 @@
 /* Global CSS Config */
 body {
   font-family: var(--noto-sans); }
+
+.bg-light-blue {
+  background-color: var(--light-blue-main); }
+
+.text-light-blue {
+  color: var(--light-blue-main); }
+
+.bg-blue-main {
+  background-color: var(--blue-main); }
+
+.text-blue-main {
+  color: var(--blue-main); }
+
+.bg-red-main {
+  background-color: var(--red-main); }
+
+.text-red-main {
+  color: var(--red-main); }
+
+.bg-white-main {
+  background-color: var(--white-main); }
+
+.text-white-main {
+  color: var(--white-main); }
+
+.bg-menu-color {
+  background-color: var(--menu-color); }
+
+.text-menu-color {
+  color: var(--menu-color); }
+
+.bg-table-color {
+  background-color: var(--table-color); }
+
+.text-table-color {
+  color: var(--table-color); }
 
 .uk-offcanvas-overlay::before {
   background-color: var(--overlay-color); }
@@ -481,7 +497,7 @@ main {
     text-align: center; }
 
 .gh-table tbody tr:nth-of-type(2n+1) {
-  background-color: rgba(208, 248, 255, 0.5); }
+  background-color: var(--table-color); }
 
 .gh-table tbody.gh-table-price tr:last-child td:not(:first-child) {
   color: var(--red-main);
@@ -507,6 +523,29 @@ main {
     color: var(--blue-main);
     font-weight: bold;
     padding-bottom: 10px; }
+
+.gh-plan .gh-plan-head {
+  padding: 10px 15px;
+  background-color: var(--blue-main); }
+  .gh-plan .gh-plan-head .gh-title {
+    color: #fff;
+    margin-bottom: 0; }
+
+.gh-plan .gh-plan-body {
+  background-color: rgba(172, 223, 255, 0.6);
+  position: relative; }
+  .gh-plan .gh-plan-body .gh-plan-button {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 15%);
+        -ms-transform: translate(-50%, 15%);
+            transform: translate(-50%, 15%);
+    background-color: var(--blue-main);
+    color: #fff; }
+    .gh-plan .gh-plan-body .gh-plan-button:hover {
+      color: #ddd; }
+  .gh-plan .gh-plan-body .gh-plan-price {
+    color: var(--red-main); }
   @media screen and (min-width: 769px) {
     .gh-home-title.gh-border-vertical {
       border-right: 1px solid #999; }
@@ -578,7 +617,11 @@ main {
     .gh-box .gh-box-body .gh-box-list .gh-item:first-child > .row {
       padding-right: 15px; }
     .gh-box .gh-box-body .gh-box-list .gh-item:last-child .row {
-      padding-left: 15px; } }
+      padding-left: 15px; }
+      .gh-plan .gh-plan-head .gh-title {
+        font-size: 18pt; }
+      .gh-plan .gh-plan-body .gh-plan-price {
+        font-size: 20pt; } }
   @media screen and (max-width: 768px) {
   .gh-sm-none {
     display: none; }
@@ -635,4 +678,8 @@ main {
     .gh-box .gh-box-body .gh-box-list .gh-item > .row {
       padding: 8px 15px; }
     .gh-box .gh-box-body .gh-box-list .gh-item:not(:last-child) {
-      border-bottom: 1px solid #ddd; } }
+      border-bottom: 1px solid #ddd; }
+      .gh-plan .gh-plan-head .gh-title {
+        font-size: 12pt; }
+      .gh-plan .gh-plan-body .gh-plan-price {
+        font-size: 15pt; } }

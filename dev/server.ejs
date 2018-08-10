@@ -1,0 +1,344 @@
+<%- include('./layout/header') %>
+    <main>
+        <section class="uk-position-relative gh-banner">
+            <div data-src="./public/images/server.jpg" uk-img>
+                <div class="uk-container py-md-5 py-3">
+                    <div class="row">
+                        <div class="col-md-4 gh-banner-content shadow">
+                            <h2 class="uk-h3 text-uppercase text-white my-0 text-uppercase">
+                                <strong>eCLOUD VPS</strong>
+                            </h2>
+                            <p class="text-white">
+                                Máy chủ ảo điện toán đám mây
+                                <br> lưu trữ SAS/SSD nhanh nhất tại Data Center tốt nhất!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="uk-container py-md-5 py-3">
+                <div class="row align-items-end">
+                    <% for(let i = 1; i < 8; i++) { %>
+                        <div class="col-md-3 mb-5">
+                            <div class="gh-plan text-center uk-box-shadow-hover-large">
+                                <div class="gh-plan-head">
+                                    <h3 class="gh-title">
+                                        ECLOUD
+                                        <%=i %>
+                                    </h3>
+                                </div>
+                                <div class="gh-plan-body px-3 pt-3 pb-4">
+                                    <ul class="nolist">
+                                        <li>
+                                            <strong>8</strong> Core
+                                        </li>
+                                        <li>
+                                            <strong>250 Gb</strong> SAS/SSD HDD</li>
+                                        <li>
+                                            <strong>7 Gb</strong> RAM</li>
+                                        <li>
+                                            <strong>2</strong> IP</li>
+                                        <li>
+                                            <strong>Unlimited</strong> Băng thông</li>
+                                        <li>
+                                            <strong>Free</strong> Directadmin
+                                            <sup class="text-danger">(*)</sup>
+                                        </li>
+                                        <li>
+                                            <span class="giaecd">14.454.000</span>
+                                            <sup>đ</sup>
+                                            <span class="thang">/06 tháng</span>
+                                        </li>
+                                        <li class="gh-plan-price">2.790.000</li>
+                                    </ul>
+                                    <a href="#" class="btn rounded-0 px-5 gh-plan-button">
+                                        Đăng Ký
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <% } %>
+                            <div class="col-md-3 text-secondary pb-md-5 pb-0">
+                                <span class="text-danger">(*)</span>: Miễn phí Directadmin (Linux) khi đăng ký từ 1 năm
+                            </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="uk-container py-md-5 py-3">
+                <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-blue-main">
+                    Dịch vụ
+                    <strong>Bổ Sung</strong>
+                    Hàng Tháng
+                </h2>
+                <div class="row">
+                    <div class="col-md-6 order-md-1 order-2">
+                        <table class="uk-table uk-table-divider uk-table-small">
+                            <tbody>
+                                <tr>
+                                    <td>Thêm 10GB HDD</td>
+                                    <td class="text-right">150.000 đ</td>
+                                </tr>
+                                <tr>
+                                    <td>Thêm 1GB RAM</td>
+                                    <td class="text-right">150.000 đ</td>
+                                </tr>
+                                <tr>
+                                    <td>Thêm 1 IP</td>
+                                    <td class="text-right">100.000 đ</td>
+                                </tr>
+                                <tr>
+                                    <td>Thêm 1 port mạng</td>
+                                    <td class="text-right">300.000 đ</td>
+                                </tr>
+                                <tr>
+                                    <td>OS Reload/cài đặt thêm</td>
+                                    <td class="text-right">Miễn phí lần đầu</td>
+                                </tr>
+                                <tr>
+                                    <td>Dịch vụ quản trị</td>
+                                    <td class="text-right">500.000đ/ tháng</td>
+                                </tr>
+                                <tr>
+                                    <td>Thêm 1 core</td>
+                                    <td class="text-right">200.000đ/ tháng</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-6 order-md-2 order-1 text-center">
+                        <img src="./public/images/server.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="uk-cover-container py-md-5 py-3">
+            <img src="./public/images/dark-blue.jpg" uk-cover="">
+            <div class="row">
+                <div class="col-md-8 offset-md-4">
+                    <div class="px-3">
+                        <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-white">
+                            Các
+                            <strong>hỗ trợ</strong>
+                            khác
+                        </h2>
+                    </div>
+                    <table class="uk-table uk-table-small text-white">
+                        <tbody>
+                            <tr>
+                                <td>Data Center</td>
+                                <td>Tốt nhất VN: Viettel</td>
+                            </tr>
+                            <tr>
+                                <td>Công nghệ Cloud</td>
+                                <td>Virtuozzo (Parallels Cloud Server)</td>
+                            </tr>
+                            <tr>
+                                <td>Ổ cắm mạng từ Switch đến Backbone</td>
+                                <td>1 Gbps</td>
+                            </tr>
+                            <tr>
+                                <td>Công nghệ lưu trữ đảm bảo an toàn cao nhất</td>
+                                <td>Virtuozzo Cloud Storage (SSD caching, multiple replicas)</td>
+                            </tr>
+                            <tr>
+                                <td>Đường truyền trong nước</td>
+                                <td>1000mbps</td>
+                            </tr>
+                            <tr>
+                                <td>Đường truyền quốc tế</td>
+                                <td>10 Mbps</td>
+                            </tr>
+                            <tr>
+                                <td>Servers cloud</td>
+                                <td>Supermicro/DELL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="uk-container px-md-3 px-0 py-md-5 py-3 gh-table">
+                <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-blue-main">
+                    <strong>So sánh</strong>
+                    eCloud VPS/eCloud Server với các dịch vụ khác
+                </h2>
+                <table class="table table-striped uk-table-small">
+                    <thead>
+                        <tr class="text-center">
+                            <th class="border-0 text-dark"></th>
+                            <th class="border-0 text-dark">Server vật lý</th>
+                            <th class="border-0 text-dark">VPS</th>
+                            <th class="bg-table-color border-0 text-dark">eCloudVPS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tính khả chuyển (chuyển đổi tài nguyên CPU, RAM, HDD… tức thời)</td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hệ điều hành đa dạng (Tùy chọn CentOS, Ubuntu, Windows Server…)</td>
+                            <td class="text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Backup định kì (Backup dữ liệu, snapshot cloud server…)</td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tính sẵn sàng cao (Khả năng tự chuyển đổi khi server hư…)</td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>An toàn và bảo mật (Thiết lập firewall, cập nhật các bản vá lỗi…)</td>
+                            <td class="text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Tăng hiệu năng hệ thống (Thiết lập Load balancer, CDN, RAID Storage…)</td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kết nối băng thông tốc độ cao</td>
+                            <td class="text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Chạy đồng thời trên nhiều servers</td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+                            </td>
+                            <td class="text-center">
+                                <i uk-icon="icon:close; ratio: 1.2"></i>
+                            </td>
+                            <td class="bg-blue-main text-white text-center">
+                                <i uk-icon="icon: check; ratio: 1.2"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="uk-container py-md-5 py-3">
+                <h2 class="gh-home-title gh-border-left uk-h4 mt-0 pb-md-4 pb-3 text-blue-main">
+                    <strong>Tìm hiểu</strong>
+                    thêm về
+                    <strong>eCloud VPS</strong>
+                </h2>
+                <div class="gh-support-content">
+                    <ul class="nolist" uk-accordion="active: true">
+                        <li>
+                            <a href="#" class="uk-accordion-title">
+                                eCloud VPS/eCloud Server – Server công nghệ điện toán đám mây thế hệ mới!
+                            </a>
+                            <div class="uk-accordion-content px-3 bg-white">
+                                <p>
+                                    <strong>eCloud Server:</strong> là máy chủ ảo điện toán đám mây, hoạt động trên nhiều servers
+                                    vật lý khác nhau. Vì vậy, eCloud Server giúp bạn có thể truy cập đến nguồn cung cấp tài
+                                    nguyên không giới hạn (HDD, RAM, CPU, NETWORK), trong khi đối với các môi trường lưu
+                                    trữ truyền thống thì các nguồn tài nguyên này thường bị giới hạn trong một server vật
+                                    lý. Chi phí eCloud Server&nbsp;được xác định bởi số lượng tài nguyên lựa chọn (CPU, RAM,
+                                    HDD).
+                                </p>
+                                <p>Với các tính năng vượt trội của công nghệ điện toán đám mây Virtuozzo (của hãng Parallels
+                                    nổi tiếng),
+                                    <a href="http://esc.vn/ecloudvps/" target="_blank" rel="noopener">eCloud VPS</a> (eCloud Server) của ESC sẽ mạng lại lợi ích thực sự so với các mô hình
+                                    điện toán đám mây khác (https://virtuozzo.com/).</p>
+                                <p>Ưu điểm eCloud Server là sự linh hoạt từ việc điều chỉnh cấu hình RAM, CPU và thêm HDD gần
+                                    như ngay lập tức, điều này giúp cho việc nâng cấp máy chủ VPS trở nên đơn giản và dễ
+                                    dàng hơn. Đồng thời eCloud đảm bảo tính sẵn sàng cao, tốc độ cao, nâng cấp dễ dàng, khả
+                                    năng kiểm soát và phòng chống sự cố, quản trị dễ dàng. eCloud Server chạy trên nền tảng
+                                    phần cứng mạnh nhất và các hệ thống hạ tầng lưu trữ SAS/SSD tại IDC lớn nhất Vietnam
+                                    đảm bảo ổn định nhất, mạnh nhất trên thị trường.</p>
+                                <p>Ngoài ra, việc khởi tạo, sao lưu dự phòng và khôi phục máy chủ ảo (VPS Server) nhanh gọn
+                                    cũng là một ưu thế mà một máy chủ thông thường không thể có.</p>
+                                <p>.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-accordion-title">
+                                Tính năng eCloud VPS
+                            </a>
+                            <div class="uk-accordion-content px-3 bg-white">
+                                dasda
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="uk-accordion-title">
+                                Các dịch vụ tích hợp trong 1 eCVPS
+                            </a>
+                            <div class="uk-accordion-content px-3 bg-white">
+                                dasda
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <%- include('./layout/footer') %>
