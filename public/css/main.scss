@@ -38,11 +38,10 @@
       color: var(--white-main);
     }
   }
-
   .text-red-main {
-    oolor: var(--red-main);
+    color: var(--red-main);
     &span{
-      oolor: var(--red-main);
+      color: var(--red-main);
     }
   }
 
@@ -133,7 +132,6 @@ main{
   position: relative;
   text-transform: uppercase;
   &.gh-border-vertical{
-
     @include md{
       border-right: 1px solid #999;
       &::after{
@@ -184,13 +182,13 @@ main{
   }
 
   &::before {
-    width: 15%;
+    width: 25%;
     border-bottom: 1px solid #999;
   }
 
   &::after {
     width: 50px;
-    bottom: -0.5px;
+    bottom: -1px;
     border-bottom: 4px solid var(--red-main);
   }
 }
