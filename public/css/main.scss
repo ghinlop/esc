@@ -304,7 +304,11 @@ main{
     }
   }
 }
-
+.gh-menu-bottom{
+  &.uk-sticky-fixed{
+    background: #fff;
+  }
+}
 .gh-header-logo {
   img {
     max-width: var(--logo-head);
@@ -393,6 +397,9 @@ main{
 }
 
 .gh-toggle-menu {
+  &.uk-sticky-fixed{
+    background-color: var(--blue-main);
+  }
   li:not(:last-child) {
     border-right: 1px solid #0c4d77;
   }
@@ -644,9 +651,12 @@ main{
     }
   }
   article{
-    padding: 15px;
+    padding:0 15px!important;
     border-left: 2px solid #999;
     color: #888;
+    @include sm{
+      font-size: 10pt;
+    }
   }
 }
 .gh-support-toggle{
@@ -738,4 +748,72 @@ main{
     }
   }
 
+}
+/* Box Class */
+.gh-box{
+  margin-bottom: 15px;
+  .gh-box-header{
+    overflow-x: hidden;
+    &.gh-border-right{
+      border-top-right-radius: 10px;
+    }
+    &.gh-border-left{
+      border-top-left-radius: 10px;
+    }
+    .gh-box-title, .gh-box-sub{
+      margin: 0;
+      padding: 15px 8px;
+      font-weight: bold;
+      background-color: var(--blue-main);
+      color: #fff;
+      @include sm{
+        font-size: 11pt;
+        text-align: center;
+      }
+    }
+    .gh-box-sub{
+      @include md{
+        text-align: right;
+      }
+      @include sm{
+        background-color: var(--white-main);
+        color: var(--red-main);
+      }
+    }
+  }
+  .gh-box-body{
+    .gh-box-title{
+      margin: 0;
+      color: var(--blue-main);
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    .gh-box-list{
+      .gh-item{
+        @include sm{
+          >.row{
+            padding: 8px 15px;
+          }
+          &:not(:last-child){
+            border-bottom: 1px solid #ddd;
+          }
+        }
+        @include md{
+          >.row{
+            padding: 15px 5px;
+          }
+          &:first-child{
+            >.row{
+              padding-right: 15px;
+            }
+          }
+          &:last-child{
+            .row{
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

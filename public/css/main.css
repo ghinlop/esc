@@ -184,6 +184,9 @@ main {
     .gh-menu-right li a:hover {
       color: #fff; }
 
+.gh-menu-bottom.uk-sticky-fixed {
+  background: #fff; }
+
 .gh-header-logo img {
   max-width: var(--logo-head); }
 
@@ -206,6 +209,9 @@ main {
   left: 0 !important;
   right: 0 !important;
   width: 100%; }
+
+.gh-toggle-menu.uk-sticky-fixed {
+  background-color: var(--blue-main); }
 
 .gh-toggle-menu li:not(:last-child) {
   border-right: 1px solid #0c4d77; }
@@ -407,7 +413,7 @@ main {
       border-bottom: 0 solid var(--no-color); }
 
 .gh-support-content article {
-  padding: 15px;
+  padding: 0 15px !important;
   border-left: 2px solid #999;
   color: #888; }
 
@@ -481,7 +487,27 @@ main {
   color: var(--red-main);
   font-weight: bold; }
 
-@media screen and (min-width: 769px) {
+/* Box Class */
+.gh-box {
+  margin-bottom: 15px; }
+  .gh-box .gh-box-header {
+    overflow-x: hidden; }
+    .gh-box .gh-box-header.gh-border-right {
+      border-top-right-radius: 10px; }
+    .gh-box .gh-box-header.gh-border-left {
+      border-top-left-radius: 10px; }
+    .gh-box .gh-box-header .gh-box-title, .gh-box .gh-box-header .gh-box-sub {
+      margin: 0;
+      padding: 15px 8px;
+      font-weight: bold;
+      background-color: var(--blue-main);
+      color: #fff; }
+  .gh-box .gh-box-body .gh-box-title {
+    margin: 0;
+    color: var(--blue-main);
+    font-weight: bold;
+    padding-bottom: 10px; }
+  @media screen and (min-width: 769px) {
     .gh-home-title.gh-border-vertical {
       border-right: 1px solid #999; }
       .gh-home-title.gh-border-vertical::after {
@@ -544,9 +570,16 @@ main {
     .gh-table th, .gh-table td {
       font-size: 11pt; }
     .gh-table td {
-      padding: 10px 12px; } }
-
-@media screen and (max-width: 768px) {
+      padding: 10px 12px; }
+      .gh-box .gh-box-header .gh-box-sub {
+        text-align: right; }
+    .gh-box .gh-box-body .gh-box-list .gh-item > .row {
+      padding: 15px 5px; }
+    .gh-box .gh-box-body .gh-box-list .gh-item:first-child > .row {
+      padding-right: 15px; }
+    .gh-box .gh-box-body .gh-box-list .gh-item:last-child .row {
+      padding-left: 15px; } }
+  @media screen and (max-width: 768px) {
   .gh-sm-none {
     display: none; }
     .gh-btn-order {
@@ -584,10 +617,22 @@ main {
     .gh-banner-content {
       text-align: center;
       background-color: rgba(255, 255, 255, 0.7); }
+    .gh-support-content article {
+      font-size: 10pt; }
     .gh-table th, .gh-table td {
       font-size: 9pt; }
   .gh-table th {
     font-size: 7pt;
     padding: 5px !important; }
     .gh-table td {
-      padding: 5px; } }
+      padding: 5px; }
+        .gh-box .gh-box-header .gh-box-title, .gh-box .gh-box-header .gh-box-sub {
+          font-size: 11pt;
+          text-align: center; }
+      .gh-box .gh-box-header .gh-box-sub {
+        background-color: var(--white-main);
+        color: var(--red-main); }
+    .gh-box .gh-box-body .gh-box-list .gh-item > .row {
+      padding: 8px 15px; }
+    .gh-box .gh-box-body .gh-box-list .gh-item:not(:last-child) {
+      border-bottom: 1px solid #ddd; } }

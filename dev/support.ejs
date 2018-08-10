@@ -1,32 +1,34 @@
 <%- include('./layout/header') %>
+
+  <a href="#support-toggle" class="d-md-none d-inline-block gh-support-toggle" uk-toggle>
+    <div class="gh-toggle-content">
+      <i class="fa fa-angle-right fa-lg"></i>
+      <i class="fa fa-angle-right fa-lg"></i>
+    </div>
+  </a>
   <main>
+    <div id="start-support"></div>
     <%- include('./components/banner-header') -%>
-      <a href="#support-toggle" class="d-md-none d-inline-block gh-support-toggle" uk-toggle>
-        <div class="gh-toggle-content">
-          <i class="fa fa-angle-right fa-lg"></i>
-          <i class="fa fa-angle-right fa-lg"></i>
-        </div>
-      </a>
       <section>
         <div class="uk-container py-md-5 py-3">
           <div class="row nodesk uk-position-relative">
             <div id="support-toggle" class="col-md-3" uk-offcanvas="overlay: true">
               <div class="uk-offcanvas-bar bg-blue-main p-0">
-                <div uk-sticky="bottom: #end-sticky; media: (min-width: 769px)">
+                <div uk-sticky="bottom: #end-sticky; media: 769">
                   <ul class="nolist gh-widget-support bg-blue-main" uk-switcher="connect: .gh-support-content">
-                  <li><a href="#" class="uk-offcanvas-close">Tên miền Việt Nam</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">SUPPORT ESC</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Web hosting</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Email hosting</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Máy chủ ảo (VPS)</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">DirectAdmin control panel</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Hệ thống quản lý tên miền </a></li>
-                  <li><a href="#" class="uk-offcanvas-close">và dịch vụ (ORS)</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">DNS & DDNS tại ESC</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Windows server</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Linux server</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Đối tác bán lẻ</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Chứng chỉ số SSL</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Tên miền Việt Nam</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>SUPPORT ESC</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Web hosting</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Email hosting</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Máy chủ ảo (VPS)</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>DirectAdmin control panel</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Hệ thống quản lý tên miền </a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>và dịch vụ (ORS)</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>DNS & DDNS tại ESC</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Windows server</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Linux server</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Đối tác bán lẻ</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Chứng chỉ số SSL</a></li>
                 </ul>
                 </div>
               </div>

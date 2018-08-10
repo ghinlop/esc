@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0d4399" />
+<meta name="msapplication-navbutton-color" content="#0d4399" />
+<meta name="apple-mobile-web-app-status-bar-style" content="#0d4399" />
+<meta name="Description" content="" />
+<meta name="Keywords" content="" />
+<meta name="Classification" content="Personal" />
+<meta name="Rating" content="General" />
+<meta name="Revisit-After" content="7 Days" />
+<meta name="DC.Description" content="" />
+<meta name="geo.placename" content="Viet Nam" />
+<meta name="geo.region" content="vn" />
+<meta name="DC.Language" content="vn" />
+<meta name="robots" content="index,follow" />
+<meta name="alexaVerifyID" content="" />
+<meta property="og:site_name" content="" />
+<meta property="og:image" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="" />
+<meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="fb:app_id" content="" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/htmll; charset=UTF8" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link rel="alternate" href="https://vutaweb.vn" hreflang="vn" />
+    <link rel="stylesheet" href="./public/css/vutaweb.css" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <title>Document</title>
+</head>
+<body class="montserrat">
+    <div id="app" class="uk-offcanvas-content">
+      <header id="header" class="px-3">
+  <div class="row">
+    <div class="col-12 order-md-2 order-1 nodesk px-0">
+      <div class="gh-menu-bottom px-3" uk-sticky="media: 769">
+        <div class="uk-container uk-position-relative">
+        <div class="row align-items-center">
+          <div class="col-md-3">
+            <a href="/" class="gh-header-logo py-md-0 py-3 text-md-left text-center d-block">
+              <img src="./public/images/logo.png" alt="">
+            </a>
+          </div>
+          <div id="js-gh-navbar" class="col-md-9 text-md-right" uk-offcanvas="mode: push; overlay: true">
+            <div class="uk-offcanvas-bar p-0">
+              <a href="/" class="py-md-0 py-3 text-md-left text-center d-md-none">
+                <img src="./public/images/logo.png" alt="">
+              </a>
+              <ul class="gh-navbar nolist d-md-inline-flex text-uppercase">
+                <li><a class="active" href="#">Tất cả trang</a></li>
+                <li><a href="#">Tên Miền</a></li>
+                <li><a href="#">Hosting</a></li>
+                <li class="gh-dropdown">
+                  <a href="#">Email</a>
+                  <div uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500" class="gh-dropdown-expand bg-blue-main py-md-4 p-0">
+                    <div class="uk-container">
+                      <div class="row align-items-start">
+                        <div class="col-md-4 border-right border-white text-white uk-text-small d-md-block d-none">
+                          Email server là dịch vụ email chuyên nghiệp với thương hiệu riêng. Chúng tôi sẽ giúp bạn có hệ thống email theo tên miền dung lượng lớn và bảo mật cao.
+                        </div>
+                        <div class="col-md-3 px-md-3 px-0">
+                          <strong class="mb-2 text-uppercase text-white-main d-block">EMAIL</strong>
+                          <ul class="nolist">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-database"></i>
+                                <span>Email chuyên nghiệp</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-lock"></i>
+                                <span>Email server riêng</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-thumbs-up"></i>
+                                <span>Google Email</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                <span>Email marketing</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 px-md-3 px-0">
+                          <strong class="mb-2 text-uppercase text-white-main d-block">support 24/7</strong>
+                          <ul class="nolist">
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-check"></i>
+                                <span>Ticket</span>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="#">
+                                <i class="fa fa-check"></i>
+                                <span>Kiến thức</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="col-md-2 d-md-block d-none">
+                          <img data-src="./public/images/email-bg.png" alt="" uk-img>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="gh-dropdown">
+                  <a href="#">Server</a>
+                  <div class="bg-blue-main" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500">
+                    <ul class="nolist">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-database"></i>
+                          <span>Email chuyên nghiệp</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-lock"></i>
+                          <span>Email server riêng</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-thumbs-up"></i>
+                          <span>Google Email</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-envelope"></i>
+                          <span>Email marketing</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Thiết Kế Web</a></li>
+                <li><a href="#">Dịch Vụ Khác</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-12 order-md-1 order-2 gh-header d-none d-md-block">
+      <div class="uk-container">
+        <div class="row align-items-center">
+          <div class="col-md-9">
+            <div class="row align-items-center">
+              <div class="col-md-7 text-uppercase">
+                <strong class="uk-text-small">
+                  Nhà đăng ký chính thức tên miền Việt Nam
+                </strong>
+                <a id="lang-select" href="#" class="d-md-inline-block bg-red-main text-white py-md-1 px-md-2 ml-md-2 rounded text-uppercase uk-text-bold">EN</a>
+                <div class="no-bg" uk-dropdown="animation: uk-animation-slide-bottom-small; duration: 500; toggle: #lang-select; pos: bottom-center">
+                  <ul class="nolist gh-lang-slc bg-blue-main shadow">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Vietnamese</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-5 text-md-right bg-menu-color">
+                <ul class="nolist d-inline-flex">
+                  <li><a class="d-block px-3 py-2" href="#">Hỗ Trợ</a></li>
+                  <li><a class="d-block px-3 py-2" href="#">Liên Hệ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 bg-blue-main">
+            <ul class="nolist d-md-inline-flex gh-menu-right">
+              <li><a href="#"><i class="mr-2" uk-icon="icon: cart; ratio: .9"></i><span>Giỏ hàng</span></a></li>
+              <li><a href="#"><i class="mr-2" uk-icon="icon: user; ratio: .9"></i><span>Đăng ký/Đăng nhập</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 order-2 d-md-none bg-blue-main px-0">
+      <div class="gh-toggle-menu" uk-sticky>
+        <ul class="row text-center nolist">
+          <li class="text-center col-3 px-1">
+            <a id="mobile-lang-slc" href="#">
+              <i class="d-block mb-1" uk-icon="icon: world"></i>
+              <span>EN</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#">
+              <i class="d-block mb-1" uk-icon="icon: cart"></i>
+              <span>Giỏ Hàng</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#">
+              <i class="d-block mb-1" uk-icon="icon: user"></i>
+              <span>Tài khoản</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#js-gh-navbar" uk-toggle>
+              <i class="d-block mb-1" uk-icon="icon: menu"></i>
+              <span>Menu</span>
+            </a>
+          </li>
+        </ul>
+
+        <div uk-dropdown="toggle: #mobile-lang-slc;animation: uk-animation-slide-bottom-small; duration: 500" class="w-100 gh-dropdown-expand bg-blue-main mt-0 p-0">
+          <ul class="nolist w-100 mt-0">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Vietnamese</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+      <a class="gh-totop" href="#app" uk-scroll uk-sticky="cls-active: gh-active; cls-inactive: gh-unactive; animation: uk-animation-fade">
+        <span class="uk-position-relative" uk-icon="icon: chevron-up; ratio: 2"></span>
+      </a>
+
+  <main>
+    <section class="uk-position-relative py-md-5 py-3 gh-banner" data-src="./public/images/contact.png" uk-img>
+      <div class="uk-container">
+        <div class="row">
+          <div class="col-md-4 gh-banner-content shadow">
+            <h2 class="uk-h3 text-uppercase text-blue-main my-0 text-uppercase">
+            <strong>Liên Hệ</strong>
+          </h2>
+            <h2 class="text-uppercase text-red-main my-0 text-uppercase">
+            <strong class="text-danger">1900 2069</strong>
+          </h2>
+            <p>
+              Giải quyết và hướng dẫn các sự cố kỹ thuật, các thủ tục hành chính liên quan đến dịch vụ
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="uk-container py-md-5 py-3">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h4 class="text-uppercase text-blue-main uk-text-bold my-0">
+            vp tp.hcm
+          </h4>
+            <p class="my-1">
+              Công ty TNHH Giải Pháp Trực Tuyến - OnlinE Solution Co. Ltd (ESC)
+            </p>
+            <ul class="gh-contact nolist">
+              <li class="border-bottom border-muted py-2">
+                <i class="text-muted" uk-icon="location"></i>
+                <span>A16 đường 18 P.Hiệp Bình Chánh, Q.Thủ Đức</span>
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md-6 border-bottom border-muted py-2">
+                    <i class="text-muted" uk-icon="receiver"></i>
+                    <span>(028) 6284 30 35 – 629 44 808</span>
+                  </div>
+                  <div class="col-md-6 border-bottom border-muted py-2">
+                    <img src="./public/images/icon/print.svg" width="22" height="22">
+                    <span>(028) 6258 14 09</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-block mt-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1959.4166673263544!2d106.71489891423276!3d10.824063399671793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zQTE2IMSRxrDhu51uZyAxOCBQLkhp4buHcCBCw6xuaCBDaMOhbmgsIFEuVGjhu6cgxJDhu6lj!5e0!3m2!1svi!2s!4v1533866784833"
+                width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h4 class="text-uppercase text-blue-main uk-text-bold my-0">
+            vp Hà Nội
+          </h4>
+            <p class="my-1">
+              Công ty TNHH Giải Pháp Trực Tuyến - OnlinE Solution Co. Ltd (ESC)
+            </p>
+            <ul class="gh-contact nolist">
+              <li class="border-bottom border-muted py-2">
+                <i class="text-muted" uk-icon="location"></i>
+                <span>71 Trần Quốc Toản,Quận Hoàn Kiếm</span>
+              </li>
+              <li>
+                <div class="row">
+                  <div class="col-md-6 border-bottom border-muted py-2">
+                    <i class="text-muted" uk-icon="receiver"></i>
+                    <span>(024) 39 42 68 96</span>
+                  </div>
+                  <div class="col-md-6 border-bottom border-muted py-2">
+                    <img src="./public/images/icon/print.svg" width="22" height="22">
+                    <span>(024) 39 42 68 97</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="d-block mt-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1959.4166673263544!2d106.71489891423276!3d10.824063399671793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zQTE2IMSRxrDhu51uZyAxOCBQLkhp4buHcCBCw6xuaCBDaMOhbmgsIFEuVGjhu6cgxJDhu6lj!5e0!3m2!1svi!2s!4v1533866784833"
+                width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="uk-container">
+        <div class="row">
+          <div class="col-md-6 px-md-3 px-0">
+            <div class="gh-box">
+              <div class="gh-box-header gh-border-right px-3">
+                <div class="row">
+                  <h3 class="uk-h6 col-md-6 gh-box-title">BỘ PHẬN HỖ TRỢ KỸ THUẬT</h3>
+                  <h4 class="uk-h6 col-md-6 gh-box-sub">(24/7) 1900 2069 – 0909 966 201</h4>
+                </div>
+              </div>
+              <div class="gh-box-body px-3">
+                <div class="row gh-box-list">
+                  <div class="col-md-4 gh-item">
+                    <div class="row align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gh-box">
+              <div class="gh-box-header gh-border-right px-3">
+                <div class="row">
+                  <h3 class="uk-h6 col-md-6 gh-box-title">Chăm sóc khách hàng</h3>
+                  <h4 class="uk-h6 col-md-6 gh-box-sub">1900 2069 – claim@esc.vn</h4>
+                </div>
+              </div>
+            </div>
+            <div class="gh-box">
+              <div class="gh-box-header gh-border-right px-3">
+                <div class="row">
+                  <h3 class="uk-h6 col-md-6 gh-box-title">BỘ PHẬN KINH DOANH</h3>
+                  <h4 class="uk-h6 col-md-6 gh-box-sub">1900 206</h4>
+                </div>
+              </div>
+              <div class="gh-box-body px-3">
+                <div class="row gh-box-list align-items-end">
+                  <div class="col-md-4 gh-item">
+                    <div class="row align-items-center">
+                      <h4 class="gh-box-title uk-h6 text-uppercase uk-width-1-1 pl-md-0">Hà Nội</h4>
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <h4 class="gh-box-title uk-h6 text-uppercase uk-width-1-1">Hồ Chí Minh</h4>
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row gh-box-list">
+                  <div class="col-md-4 gh-item">
+                    <div class="row align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row gh-box-list">
+                  <div class="col-md-4 gh-item">
+                    <div class="row align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 gh-item">
+                    <div class="row px-3 align-items-center">
+                      <div class="uk-width-expand">
+                        <strong class="uk-text-meta">Thành Luân</strong>
+                        <div class="d-block uk-text-bold">1900 2069</div>
+                      </div>
+                      <div class="uk-width-auto">
+                        <div class="row align-items-center">
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                            <img src="./public/images/icon/whatsapp.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                          <div class="uk-width-1-2 text-center">
+                            <a class="d-inline-block" href="#">
+                              <img src="./public/images/icon/skype.svg" alt="" uk-svg width="30" height="30">
+                          </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="gh-box">
+              <div class="gh-box-header gh-border-left">
+                <h3 class="uk-h6 gh-box-title">BỘ PHẬN KINH DOANH</h3>
+              </div>
+              <div class="gh-box-body py-3">
+                <form class="uk-form-stacked" action="index.html" method="post">
+                  <div class="form-group">
+                    <div class="row align-items-center">
+                      <div class="col-md-3">
+                        <label for="fullname">Họ Tên</label>
+                      </div>
+                      <div class="col-md-9">
+                        <input id="fullname" type="text" class="form-control rounded-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row align-items-center">
+                      <div class="col-md-3">
+                        <label for="email">Email</label>
+                      </div>
+                      <div class="col-md-9">
+                        <input id="email" type="email" class="form-control rounded-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row align-items-center">
+                      <div class="col-md-3">
+                        <label for="title">Chủ Đề</label>
+                      </div>
+                      <div class="col-md-9">
+                        <input id="title" type="text" class="form-control rounded-0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row align-items-start">
+                      <div class="col-md-3">
+                        <label for="nd">Nội dung</label>
+                      </div>
+                      <div class="col-md-9">
+                        <textarea class="form-control rounded-0" name="name" rows="8" cols="80"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row align-items-center">
+                      <div class="col-md-3">
+                        <label for="security">Mã bảo mật</label>
+                      </div>
+                      <div class="col-md-3">
+                        <input id="security" type="text" class="form-control rounded-0">
+                      </div>
+                      <div class="col-md-3">
+                        <h2 class="m-0">dsad213</h2>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="#">
+                          <img src="./public/images/icon/refresh.svg" uk-svg alt="" width="35" height="35">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group text-center py-3">
+                    <button class="uk-button uk-button-primary text-uppercase">Gửi Nội Dung</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="bg-light">
+  <div class="uk-container py-md-5 py-3">
+    <div class="row gh-footer-list">
+      <div class="col-md-4 mb-3">
+        <address class="mb-3 d-block">
+          <strong class="text-uppercase d-block mb-2">HỒ CHÍ MINH</strong>
+          <ul class="nolist text-muted">
+            <li>A16 đường số 18, P. Hiệp Bình Chánh, Quận Thủ Đức</li>
+            <li><b class="text-dark">Điện thoại</b>: (028) 6284 3035 - (028) 629 44 808</li>
+            <li><b class="text-dark">Fax</b>: (028) 6258 14 09</li>
+            <li><b class="text-dark">Mail</b>: support@esc.vn</li>
+          </ul>
+        </address>
+        <adress class="mb-3 d-block">
+          <strong class="text-uppercase d-block mb-2">HÀ NỘI</strong>
+          <ul class="nolist text-muted">
+            <li>71 Trần Quốc Toản, Quận Hoàn Kiếm</li>
+            <li><b>Điện thoại</b>: (024) 39 42 68 96</li>
+            <li><b>Fax</b>: (024) 39 42 68 97</li>
+            <li>Mail: support@esc.vn</li>
+          </ul>
+        </adress>
+        <adress class="d-block">
+          <strong class="text-uppercase d-block mb-2">CHI NHÁNH</strong>
+          <ul class="nolist text-muted">
+            <li>Tòa Nhà SBI, CVPM Quang Trung</li>
+            <li><b>Điện thoại</b>: (028) 37 156 156</li>
+            <li><b>Fax</b>: (028) 3717 8666</li>
+          </ul>
+        </adress>
+      </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">
+              Tên Miền
+            </h3>
+            <ul class="nolist">
+              <li><a href="/dang-ky-ten-mien">Đăng ký tên miền</a></li>
+              <li><a href="/bang-gia-ten-mien">Bảng giá tên miền</a></li>
+              <li><a href="/ban-khai-dang-ky">Bản khai đăng ký</a></li>
+              <li><a href="/chuyen-ten-mien">Chuyển đổi</a></li>
+              <li><a href="/chuyen-nhuong-ten-mien">Chuyển nhượng</a></li>
+              <li><a href="/loi-ich-khi-dang-ky-tai-esc">Lợi ích đăng ký ESC</a></li>
+              <li><a href="/thu-tuc-dang-ky-ten-mien">Thủ tục đăng ký</a></li>
+              <li><a href="/vong-doi-ten-mien">Vòng đời tên miền</a></li>
+              <li><a href="/toithaytenmien">Tên miền cho sinh viên</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Hosting</h3>
+            <ul class="nolist">
+              <li><a href="/cloud-hosting">Bảng giá hosting</a></li>
+              <li><a href="/giai-phap-hosting">Các giải pháp hosting</a></li>
+              <li><a href="/wordpress-hosting">Wordpress hosting</a></li>
+              <li><a href="/hosting-ip-rieng">Hosting IP riêng</a></li>
+              <li><a href="/toithaytenmien/">Hosting cho sinh viên</a></li>
+              <li><a href="/dich-vu-sao-luu-du-lieu/">Dịch vụ sao lưu dữ liệu</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Thiết Kế Web</h3>
+            <ul class="nolist">
+              <li><a target="_blank" href="https://web.esc.vn/goi-dich-vu/">Dịch vụ chuyên nghiệp</a></li>
+              <li><a target="_blank" href="https://web.esc.vn/web-theo-yeu-cau/">Quy trình thiết kế </a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Email</h3>
+            <ul class="nolist">
+              <li><a href="/bang-gia-email">Email server chuyên nghiệp</a></li>
+              <li><a href="/email-server-rieng">Email server riêng</a></li>
+              <li><a href="/email-marketing">Email marketing</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3 order-md-1 order-2">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Kết nối với chúng tôi</h3>
+            <ul class="nolist d-flex gh-social-link">
+              <li><a class="facebook" href="#" uk-icon="icon: facebook; ratio: 1.3"></a></li>
+              <li><a class="twitter" href="#" uk-icon="icon: twitter; ratio: 1.3"></a></li>
+              <li><a class="google-plus" href="#" uk-icon="icon: google-plus; ratio: 1.3"></a></li>
+              <li><a class="youtube" href="#" uk-icon="icon: youtube; ratio: 1.3"></a></li>
+              <li><a class="instagram" href="#" uk-icon="icon: instagram; ratio: 1.3"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 mb-3 order-md-2 order-1">
+            <ul class="nolist d-md-block d-flex align-items-center">
+              <li>
+                <a class="p-md-0 p-3 d-block" href="">
+                  <img alt="thong-bao-bo-cong-thuong" src="./public/images/da-thong-baopng.png">
+                </a>
+              </li>
+              <li>
+                <a class="p-md-0 p-3 d-block" href="">
+                  <img alt="thong-bao-bo-cong-thuong" src="./public/images/dmca_protected_sml_120n.png">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Email</h3>
+            <ul class="nolist">
+              <li><a href="/ecloudvps">eCloud VPS</a></li>
+              <li><a href="/co-location">Colocation</a></li>
+              <li><a href="/dedicated">Dedicated</a></li>
+              <li><a href="/outlet">Outlet</a></li>
+              <li><a href="/vps">VPS</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 mb-3">
+            <h3 class="uk-h5 mb-2 uk-text-bold text-uppercase">Dịch vụ khác</h3>
+            <ul class="nolist">
+              <li><a href="/parallels-plesk-panel">Plesk</a></li>
+              <li><a href="/cpanel">cPanel</a></li>
+              <li><a href="/directadmin">DirectAdmin</a></li>
+              <li><a target="_blank" href="https://edoc.com.vn">eDoc</a></li>
+              <li><a href="/chung-chi-so-ssl">Chứng chỉ số SSL</a></li>
+              <li><a href="/online-marketing">Quảng cáo Google</a></li>
+              <li><a href="/so-hoa-du-lieu">Số hóa dữ liệu</a></li>
+              <li><a href="/cap-nhat-website">Bảng giá cập nhật website</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-blue-main mb-md-5">
+    <div class="uk-container">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-light">
+          Copyright © 2017 esc.vn - All rights reserved.
+        </div>
+        <div class="col-md-8 text-md-right text-center">
+          <ul class="nolist d-md-inline-flex gh-copyright">
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Chính sách & Bảo mật</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Thanh toán</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Thỏa thuận sử dụng</a></li>
+            <li><a class="d-block px-2 py-md-2 py-1" href="">Văn bản pháp lý</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gh-footer-fixed w-100 d-md-block d-none bg-red-main">
+    <div class="uk-container py-1">
+      <ul class="nolist d-flex">
+        <li>
+          <a href="tel:19002069"><span>Hỗ Trợ 24/7:</span> <b>1900 2069</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><span>Kinh doanh TP.HCM:</span> <b>(028) 62 94 48 08</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><span>Kinh doanh Hà Nội:</span> <b>(024) 39 42 68 96</b></a>
+        </li>
+        <li>
+          <a href="tel:19002069"><b><i uk-icon="comments"></i> (024) 39 42 68 96</b></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="./public/js/jquery-3.3.1.min.js"></script>
+<script src="./public/js/uikit.min.js"></script>
+<script src="./public/js/uikit-icons.min.js"></script>
+<script src="./public/js/main.js"></script>
+</body>
+
+</html>
+

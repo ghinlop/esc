@@ -39,8 +39,9 @@
     <div id="app" class="uk-offcanvas-content">
       <header id="header" class="px-3">
   <div class="row">
-    <div class="col-12 order-md-2 order-1 nodesk">
-      <div class="uk-container uk-position-relative">
+    <div class="col-12 order-md-2 order-1 nodesk px-0">
+      <div class="gh-menu-bottom px-3" uk-sticky="media: 769">
+        <div class="uk-container uk-position-relative">
         <div class="row align-items-center">
           <div class="col-md-3">
             <a href="/" class="gh-header-logo py-md-0 py-3 text-md-left text-center d-block">
@@ -155,6 +156,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
     <div class="col-12 order-md-1 order-2 gh-header d-none d-md-block">
       <div class="uk-container">
@@ -190,39 +192,41 @@
         </div>
       </div>
     </div>
-    <div class="col-12 order-2 d-md-none bg-blue-main gh-toggle-menu px-0">
-      <ul class="row text-center nolist">
-        <li class="text-center col-3 px-1">
-          <a id="mobile-lang-slc" href="#">
-            <i class="d-block mb-1" uk-icon="icon: world"></i>
-            <span>EN</span>
-          </a>
-        </li>
-        <li class="col-3 px-1">
-          <a href="#">
-            <i class="d-block mb-1" uk-icon="icon: cart"></i>
-            <span>Giỏ Hàng</span>
-          </a>
-        </li>
-        <li class="col-3 px-1">
-          <a href="#">
-            <i class="d-block mb-1" uk-icon="icon: user"></i>
-            <span>Tài khoản</span>
-          </a>
-        </li>
-        <li class="col-3 px-1">
-          <a href="#js-gh-navbar" uk-toggle>
-            <i class="d-block mb-1" uk-icon="icon: menu"></i>
-            <span>Menu</span>
-          </a>
-        </li>
-      </ul>
-
-      <div uk-dropdown="toggle: #mobile-lang-slc;animation: uk-animation-slide-bottom-small; duration: 500" class="w-100 gh-dropdown-expand bg-blue-main mt-0 p-0">
-        <ul class="nolist w-100 mt-0">
-          <li><a href="#">English</a></li>
-          <li><a href="#">Vietnamese</a></li>
+    <div class="col-12 order-2 d-md-none bg-blue-main px-0">
+      <div class="gh-toggle-menu" uk-sticky>
+        <ul class="row text-center nolist">
+          <li class="text-center col-3 px-1">
+            <a id="mobile-lang-slc" href="#">
+              <i class="d-block mb-1" uk-icon="icon: world"></i>
+              <span>EN</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#">
+              <i class="d-block mb-1" uk-icon="icon: cart"></i>
+              <span>Giỏ Hàng</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#">
+              <i class="d-block mb-1" uk-icon="icon: user"></i>
+              <span>Tài khoản</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#js-gh-navbar" uk-toggle>
+              <i class="d-block mb-1" uk-icon="icon: menu"></i>
+              <span>Menu</span>
+            </a>
+          </li>
         </ul>
+
+        <div uk-dropdown="toggle: #mobile-lang-slc;animation: uk-animation-slide-bottom-small; duration: 500" class="w-100 gh-dropdown-expand bg-blue-main mt-0 p-0">
+          <ul class="nolist w-100 mt-0">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Vietnamese</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -231,7 +235,15 @@
         <span class="uk-position-relative" uk-icon="icon: chevron-up; ratio: 2"></span>
       </a>
 
+
+  <a href="#support-toggle" class="d-md-none d-inline-block gh-support-toggle" uk-toggle>
+    <div class="gh-toggle-content">
+      <i class="fa fa-angle-right fa-lg"></i>
+      <i class="fa fa-angle-right fa-lg"></i>
+    </div>
+  </a>
   <main>
+    <div id="start-support"></div>
     <section class="uk-position-relative py-md-5 py-3 gh-banner" data-src="./public/images/contact.jpg" uk-img>
   <div class="uk-container">
     <div class="row">
@@ -254,32 +266,26 @@
     </div>
   </div>
 </section>
-      <a href="#support-toggle" class="d-md-none d-inline-block gh-support-toggle" uk-toggle>
-        <div class="gh-toggle-content">
-          <i class="fa fa-angle-right fa-lg"></i>
-          <i class="fa fa-angle-right fa-lg"></i>
-        </div>
-      </a>
       <section>
         <div class="uk-container py-md-5 py-3">
           <div class="row nodesk uk-position-relative">
             <div id="support-toggle" class="col-md-3" uk-offcanvas="overlay: true">
               <div class="uk-offcanvas-bar bg-blue-main p-0">
-                <div uk-sticky="bottom: #end-sticky; media: (min-width: 769px)">
+                <div uk-sticky="bottom: #end-sticky; media: 769">
                   <ul class="nolist gh-widget-support bg-blue-main" uk-switcher="connect: .gh-support-content">
-                  <li><a href="#" class="uk-offcanvas-close">Tên miền Việt Nam</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">SUPPORT ESC</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Web hosting</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Email hosting</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Máy chủ ảo (VPS)</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">DirectAdmin control panel</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Hệ thống quản lý tên miền </a></li>
-                  <li><a href="#" class="uk-offcanvas-close">và dịch vụ (ORS)</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">DNS & DDNS tại ESC</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Windows server</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Linux server</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Đối tác bán lẻ</a></li>
-                  <li><a href="#" class="uk-offcanvas-close">Chứng chỉ số SSL</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Tên miền Việt Nam</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>SUPPORT ESC</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Web hosting</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Email hosting</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Máy chủ ảo (VPS)</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>DirectAdmin control panel</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Hệ thống quản lý tên miền </a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>và dịch vụ (ORS)</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>DNS & DDNS tại ESC</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Windows server</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Linux server</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Đối tác bán lẻ</a></li>
+                  <li><a href="#start-support" class="uk-offcanvas-close" uk-scroll>Chứng chỉ số SSL</a></li>
                 </ul>
                 </div>
               </div>

@@ -39,8 +39,9 @@
     <div id="app" class="uk-offcanvas-content">
       <header id="header" class="px-3">
   <div class="row">
-    <div class="col-12 order-md-2 order-1 nodesk">
-      <div class="uk-container uk-position-relative">
+    <div class="col-12 order-md-2 order-1 nodesk px-0">
+      <div class="gh-menu-bottom px-3" uk-sticky="media: 769">
+        <div class="uk-container uk-position-relative">
         <div class="row align-items-center">
           <div class="col-md-3">
             <a href="/" class="gh-header-logo py-md-0 py-3 text-md-left text-center d-block">
@@ -155,6 +156,7 @@
           </div>
         </div>
       </div>
+      </div>
     </div>
     <div class="col-12 order-md-1 order-2 gh-header d-none d-md-block">
       <div class="uk-container">
@@ -190,39 +192,41 @@
         </div>
       </div>
     </div>
-    <div class="col-12 order-2 d-md-none bg-blue-main gh-toggle-menu px-0">
-      <ul class="row text-center nolist">
-        <li class="text-center col-3 px-1">
-          <a id="mobile-lang-slc" href="#">
-            <i class="d-block mb-1" uk-icon="icon: world"></i>
-            <span>EN</span>
-          </a>
-        </li>
-        <li class="col-3 px-1">
-          <a href="#">
-            <i class="d-block mb-1" uk-icon="icon: cart"></i>
-            <span>Giỏ Hàng</span>
-          </a>
-        </li>
-        <li class="col-3 px-1">
-          <a href="#">
-            <i class="d-block mb-1" uk-icon="icon: user"></i>
-            <span>Tài khoản</span>
-          </a>
-        </li>
-        <li class="col-3 px-1">
-          <a href="#js-gh-navbar" uk-toggle>
-            <i class="d-block mb-1" uk-icon="icon: menu"></i>
-            <span>Menu</span>
-          </a>
-        </li>
-      </ul>
-
-      <div uk-dropdown="toggle: #mobile-lang-slc;animation: uk-animation-slide-bottom-small; duration: 500" class="w-100 gh-dropdown-expand bg-blue-main mt-0 p-0">
-        <ul class="nolist w-100 mt-0">
-          <li><a href="#">English</a></li>
-          <li><a href="#">Vietnamese</a></li>
+    <div class="col-12 order-2 d-md-none bg-blue-main px-0">
+      <div class="gh-toggle-menu" uk-sticky>
+        <ul class="row text-center nolist">
+          <li class="text-center col-3 px-1">
+            <a id="mobile-lang-slc" href="#">
+              <i class="d-block mb-1" uk-icon="icon: world"></i>
+              <span>EN</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#">
+              <i class="d-block mb-1" uk-icon="icon: cart"></i>
+              <span>Giỏ Hàng</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#">
+              <i class="d-block mb-1" uk-icon="icon: user"></i>
+              <span>Tài khoản</span>
+            </a>
+          </li>
+          <li class="col-3 px-1">
+            <a href="#js-gh-navbar" uk-toggle>
+              <i class="d-block mb-1" uk-icon="icon: menu"></i>
+              <span>Menu</span>
+            </a>
+          </li>
         </ul>
+
+        <div uk-dropdown="toggle: #mobile-lang-slc;animation: uk-animation-slide-bottom-small; duration: 500" class="w-100 gh-dropdown-expand bg-blue-main mt-0 p-0">
+          <ul class="nolist w-100 mt-0">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Vietnamese</a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -335,14 +339,14 @@
               <th>
                 tên miền quốc tế
               </th>
-              <th>
-                <div class="d-block text-center gh-sm-none">Phí khởi tạo</div>
+              <th class="gh-sm-none">
+                <div class="d-block text-center ">Phí khởi tạo</div>
               </th>
               <th>
                 <div class="d-block text-center">Phí Đăng Ký</div>
               </th>
               <th class="gh-sm-none">
-                <div class="d-block text-center gh-sm-none">Phí duy trì</div>
+                <div class="d-block text-center">Phí duy trì</div>
               </th>
               <th>
                 <div class="d-block text-center">Tổng phí</div>
